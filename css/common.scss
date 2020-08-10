@@ -1,11 +1,8 @@
 @charset "UTF-8";
 @import "functions.scss";
-@font-face{
-	font-family: TenMincho;
-	src: url('../assets/fonts/TenMincho.ttf');
-}
+
 body{
-	font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Kaku 　Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 body>main{
@@ -21,128 +18,257 @@ figure{
 		width: 100%;
 	}
 }
+.container{
+	max-width: 1170px;
+}
+
 .header{
+	@include flexDisplay(space-between, center);
+	max-width: 1210px;
+	width: 100%;
 	position: fixed;
 	z-index: 5;
-	width: 100%;
-	transition: all 0.5s ease;
-	@include flexDisplay(space-between, center);
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333;
 	&__logo{
-		@include flexDisplay(flex-start, center);
-		margin-left: 50px;
-		width: 220px;
-		position: relative;
-		>a{
-			@include fillPos;
-		}
-		>img{
-			width: 100%;
-		}
-		&:hover{
-			opacity: 0.8;
-		}
+		padding: 20px;
+		border-right: 1px solid #ccc;
+	}
+	input{
+		width: 300px;
+		border-radius: 5px;
+		background: none;
+		padding: 10px 15px;
+		outline: none;
+	}
+	button{
+		border: none;
+		background: no-repeat;
+		transform: translateX(-40px);
 	}
 	&__menu{
-		@include flexDisplay(center, center);
 		ul{
 			display: flex;
+			padding: 0;
 			list-style: none;
 			li{
-				display: flex;
+				&:not(:last-of-type){
+					margin-right: 30px;
+				}
 				a{
-					@include flexDisplay(center, center);
-					min-height: 115px;
-					color: #000;
-					font-weight: bold;
-					font-size: 1.8rem;
-					cursor: pointer;
-					&:hover{
-						text-decoration: none;
-						opacity: 0.8;
-					}
-				}
-				&:not(:last-child){
-					margin-right: 50px;
-				}
-				&:last-child{
-					background-color: #cfca67;
-					a{
-						font-family: 'Lustria', sans-serif;
-						font-size: 2.5rem;
-						color: #fff;
-						padding: 0 75px;
-					}
+					color: #4D4D4D;
+					font-weight: 600;
+					font-size: 1.4rem;
+					text-decoration: none;
 				}
 			}
 		}
 	}
-	&__hamburger{
-		display: none;
-	}
-	@include tablet{
-		background-color: #fff;
-		height: 55px;
-		display: flex !important;
-		&__menu{
-			position: absolute;
-			top: 55px;
-			left: 0;
-			width: 100%;
-			height: 0;
-			overflow: hidden;
-			transition: all 0.5s ease;
-			transform-origin: top center;
-			background-color: #fff;
-			ul{
-				transform: translateY(-200px);
-				justify-content: center;
-				align-items: center;
-				flex-flow: column;
-				li:not(:last-child){
-					margin-right: 0; 
+	&__user{
+		display: flex;
+		&--login{
+			display: none;
+			justify-content: space-between;
+			align-items: center;
+			figure{
+				margin-right: 20px;
+			}
+			p{
+				margin-right: 40px;
+			}
+			a{
+				color: #4D4D4D;
+				text-decoration: none;
+				font-size: 2.2rem;
+			}
+		}
+		&--register{
+			a{
+				color: #00A4D4;
+				font-weight: 600;
+				font-size: 1.4rem;
+				text-decoration: none;
+				&:first-of-type{
+					margin-right: 30px;
 				}
 			}
 		}
-		&__hamburger{
-			width: 50px;
-			height: 50px;
-			@include flexDisplay(center, center);
-			flex-flow: column;
-			&__line{
-				width: 30px;
-				height: 5px;
-				background-color: #231815;
-				border-radius: 20px;
-				transition: all 0.5s ease;
-				&--one{
-					transform: translateY(-7px);
-				}
-				&--three{
-					transform: translateY(7px);
-				}
+		&.login{
+			.header__user--login{
+				display: flex;
 			}
-			&.show .header__hamburger__line{
-				&--one{
-					transform: translateY(5px) rotate(45deg);
-				}
-				&--two{
-					transform: rotate(135deg);
-				}
-				&--three{
-					transform: translateY(-5px) rotate(135deg);
-				}
-			}
-		}
-	}
-	@include mobile{
-		&__logo{
-			margin-left: 0;
-			img{
-				width:  85%;
+			.header__user--register{
+				display: none;
 			}
 		}
 	}
 }
+.filmInfo{
+	color: #262626;
+	max-width: 570px;
+	width: 100%;
+	h2{
+		font-size: 4rem;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	p.filmInfo__category{
+		font-size: 1.5rem;
+		font-weight: 300;
+		margin-bottom: 20px;
+		opacity: 0.8;
+	}
+	p.filmInfo__content{
+		font-size: 1.5rem;
+		margin-top: 20px;
+		line-height: 1.5;
+	}
+	&__action{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 470px;
+		width: 100%;
+		margin-top: 30px;
+		a{
+			padding: 10px 25px;
+			color: #fff;
+			text-decoration: none;
+			background-color: rgba(255,255,255,0.2);
+			border-radius: 5px;
+		}
+	}
+}
+.tagName{
+	font-size: 2.2rem;
+	color: #262626;
+	margin-bottom: 20px;
+	i{
+		font-size: 1rem;
+		margin-left: 5px;
+		transform: translateY(-3px);
+	}
+}
+.rating{
+	display: flex;
+	align-items: center;
+	color: #ffca52;
+	i{
+		margin-right: 5px;
+	}
+}
+.blockSlide{
+	margin-top: 70px;
+	&__slide{
+		&__child{
+			position: relative;
+			margin: 0 10px;
+			outline: none;
+			&--info{
+				background-color: #fff;
+				padding: 10px;
+				h3{
+					color: #262626;
+					font-weight: bold;
+					font-size: 1.7rem;
+				}
+				p{
+					font-size: 1.5rem;
+					color: #262626;
+					font-weight: 300;
+					margin: 10px 0;
+				}
+			}
+			figure{
+				position: relative;
+				z-index: 0;
+			}
+			&--title{
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				padding: 30px;
+				color: #fff;
+				h3{
+					font-size: 1.7rem;
+					font-weight: bold;
+					line-height: 1.5;
+				}
+				p{
+					font-size: 1.5rem;
+					line-height: 2;
+				}
+			}
+		}
+	}
+}
+.twoblock{
+	&__child{
+		display: flex !important;
+		justify-content: space-between;
+		outline: none;
+	}
+	&__content{
+		max-width: calc(50% - 110px);
+		width: 100%;
+		.filmInfo{
+			max-width: 100%;
+			&__action a{
+				background-color: #00A4D4;
+				color: #fff;
+			}
+		}
+	}
+	&__video{
+		width: calc(50% + 90px);
+		video{
+			width: 100%;
+		}
+	}
+}
+
 .footer{
-	
+	background-color: #fff;
+	padding: 40px;
+	&__menu{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #ccc;
+		&__child{
+			h2{
+				font-size: 1.7rem;
+				font-weight: bold;
+				color: #808080;
+			}
+			ul{
+				padding: 0;
+				list-style: none;
+				li{
+					margin: 20px 0;
+					a{
+						color: #808080;
+						font-size: 1.5rem;
+						text-decoration: none;
+					}
+				}
+			}
+			&:first-of-type ul li a{
+				font-style: italic;
+			}
+		}
+	}
+	&__info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0 0;
+	}
 }
