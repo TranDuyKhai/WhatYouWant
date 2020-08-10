@@ -164,9 +164,33 @@ figure{
 .blockSlide{
 	margin-top: 70px;
 	&__slide{
+		.btn-arrow{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: rgba(2,0,36,0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			color: #fff;
+			position: absolute;
+			top: 30%;
+			transform: translateY(-50%);
+			z-index: 1;
+			i{
+				font-size: 1.6rem;
+			}
+			&-left{
+				left: -75px;
+			}
+			&-right{
+				right: -75px;
+			}
+		}
 		&__child{
 			position: relative;
-			margin: 0 10px;
+			margin: 0 15px;
 			outline: none;
 			&--info{
 				background-color: #fff;
@@ -209,6 +233,31 @@ figure{
 	}
 }
 .twoblock{
+	position: relative;
+	.btn-arrow{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: rgba(2,0,36,0.5);
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: #fff;
+		position: absolute;
+		top: 30%;
+		transform: translateY(-50%);
+		z-index: 1;
+		i{
+			font-size: 1.6rem;
+		}
+		&-left{
+			left: -75px;
+		}
+		&-right{
+			right: -75px;
+		}
+	}
 	&__child{
 		display: flex !important;
 		justify-content: space-between;
