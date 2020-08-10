@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -29,22 +29,38 @@
 	<title></title>
 
 	<!-- Google font -->
-	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<header class="header">
 		<h1 class="header__logo">
-			<img src="images/img_logo.png" alt="RASIEL">
+			<img src="images/icon_favicon.png" alt="what you want">
 			<a href="index.html"></a>
 		</h1>
+		<form action="index.html" method="post">
+			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,...">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
 		<div class="header__menu">
 			<ul>
-				<li><a>ラシエルについて</a></li>
-				<li><a>事業所一覧</a></li>
-				<li><a>よくあるご質問</a></li>
-				<li><a>ビオネストーリー</a></li>
-				<li><a>CONTACT</a></li>
+				<li><a>MỚI NHẤT</a></li>
+				<li><a>PHỔ BIẾN</a></li>
+				<li><a>XEM PHIM</a></li>
+				<li><a>TIN TỨC</a></li>
+				<li><a><i class="fas fa-ellipsis-h"></i></a></li>
 			</ul>
+		</div>
+		<div class="header__user">
+			<div class="header__user--login">
+				<figure><img src="images/home/img_user.jpg" alt=""></figure>
+				<p>John Williams <i class="fas fa-chevron-down"></i></p>
+				<a href="#"><i class="far fa-bell"></i></a>
+			</div>
+			<div class="header__user--register">
+				<a href="user/login.html">ĐĂNG NHẬP</a>
+				<a href="user/register.html">TẠO TÀI KHOẢN</a>
+			</div>
 		</div>
 		<div class="header__hamburger">
 			<span class="header__hamburger__line header__hamburger__line--one"></span>
@@ -53,7 +69,774 @@
 		</div>
 	</header>
 	<main>
-		
+		<section class="mv">
+			<figure class="mv__bg"><img src="images/home/bg_banner.jpg"></figure>
+			<div class="filmInfo">
+				<h2>LA LA LAND</h2>
+				<p class="filmInfo__category">2016 • Comedy, Drama, Music • 2h 8m</p>
+				<div class="rating rating--five">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<p class="filmInfo__content">Câu chuyện tình yêu tuyệt đẹp giữa chàng nhạc công piano tài hoa Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao?</p>
+				<div class="filmInfo__action">
+					<a href="#">Xem phim</a>
+					<a href="#">Thông tin phim</a>
+					<a href="#">+ Thêm vào thư viện</a>
+				</div>
+			</div>
+			<div class="blockSlide">
+				<h2 class="tagName">Phim nổi bật <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film01.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Interstellar</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film02.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>The Theory of Everything</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film03.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Les Misérables</h3>
+							<p>2012</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film04.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Birdman</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film05.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>The Imitation Game</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film06.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Coco</h3>
+							<p>2017</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film07.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Spotlight</h3>
+							<p>2016</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container">
+			<section class="twoblock">
+				<div>
+					<div class="twoblock__left">
+						<h2 class="tagName">Dành cho bạn <i class="fas fa-chevron-right"></i></h2>
+						<div class="filmInfo">
+							<h2>The Sound of Music</h2>
+							<p class="filmInfo__category">1965 • Drama, Music, Romance • 2h 54m</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<p class="filmInfo__content">Phim là câu chuyện về Maria - nữ tu tại Salzburg. Nàng yêu phong cảnh núi Alpine hùng vĩ hơn là nhiệm vụ tu hành. Mẹ bề trên Abbes tin rằng cá tính của Maria không thích hợp với cuộc sống tu viện nên đã khôn khéo tạo điều kiện cho Maria khám phá mục đích của cuộc đời mình.</p>
+							<div class="filmInfo__action">
+								<a href="#">Xem phim</a>
+								<a href="#">Thông tin phim</a>
+								<a href="#">+ Thêm vào thư viện</a>
+							</div>
+						</div>
+					</div>
+					<div class="twoblock__right">
+						<img src="images/home/img_videofilm.jpg" alt="">
+						<video class="videoBanner__video" src="" poster="images/home/img_videofilm.jpg" type="video/mp4" muted autoplay loop></video>
+					</div>
+				</div>
+				<div>
+					<div class="twoblock__left">
+						<div class="filmInfo">
+							<h2>LA LA LAND</h2>
+							<p class="filmInfo__category">2016 • Comedy, Drama, Music • 2h 8m</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<p class="filmInfo__content">Câu chuyện tình yêu tuyệt đẹp giữa chàng nhạc công piano tài hoa Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao?</p>
+							<div class="filmInfo__action">
+								<a href="#">Xem phim</a>
+								<a href="#">Thông tin phim</a>
+								<a href="#">+ Thêm vào thư viện</a>
+							</div>
+						</div>
+					</div>
+					<div class="twoblock__right">
+						<img src="images/home/bg_banner.jpg" alt="">
+						<video class="videoBanner__video" src="" poster="images/home/bg_banner.jpg" type="video/mp4" muted autoplay loop></video>
+					</div>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Thể loại phim <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_img_category00.jpg"></figure>
+						<p>HÀI HƯỚC</p>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_img_category01.jpg"></figure>
+						<p>HOẠT HÌNH</p>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_img_category02.jpg"></figure>
+						<p>HÀNH ĐỘNG</p>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_img_category03.jpg"></figure>
+						<p>GIA ĐÌNH</p>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_img_category04.jpg"></figure>
+						<p>VIỄN TƯỞNG</p>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_img_category05.jpg"></figure>
+						<p>CHIẾN TRANH</p>
+					</div>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Xem nhiều <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film01.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--rank"><p>#1</p></div>
+						<div class="blockSlide__slide__child--info">
+							<h3>Interstellar</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film02.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--rank"><p>#2</p></div>
+						<div class="blockSlide__slide__child--info">
+							<h3>The Theory of Everything</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film03.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--rank"><p>#3</p></div>
+						<div class="blockSlide__slide__child--info">
+							<h3>Les Misérables</h3>
+							<p>2012</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film04.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Birdman</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film05.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>The Imitation Game</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film06.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Coco</h3>
+							<p>2017</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film07.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Spotlight</h3>
+							<p>2016</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="wywBanner">
+				<figure class="wywBanner__bg"><img src="images/home/bg_whatyouwant.jpg" alt=""></figure>
+				<div class="wywBanner__slogan">
+					<h2>WHAT YOU WANT</h2>
+					<p>Mang cả thế giới điện ảnh về căn nhà của bạn</p>
+					<a href="#">Đăng ký tài khoản ngay</a>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Tin tức <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_news01.jpg" alt=""></figure>
+						<div class="news__title">
+							<h3>7 phim điện ảnh có doanh thu nội địa kém nhưng thắng lớn nhờ thị trường quốc tế</h3>
+							<p>Điện ảnh quốc tế • 01/08/2019</p>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_news02.jpg" alt=""></figure>
+						<div class="news__title">
+							<h3>Cuộc Đời Phi Thường Của Chú Chó Enzo - Boss luôn ở cạnh Sen</h3>
+							<p>Điện ảnh quốc tế • 01/08/2019</p>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_news03.jpg" alt=""></figure>
+						<div class="news__title">
+							<h3>Liên hoan phim và những cái tên có tiềm năng gây ấn tượng tại giải Oscar</h3>
+							<p>Điện ảnh quốc tế • 01/08/2019</p>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_news01.jpg" alt=""></figure>
+						<div class="news__title">
+							<h3>7 phim điện ảnh có doanh thu nội địa kém nhưng thắng lớn nhờ thị trường quốc tế</h3>
+							<p>Điện ảnh quốc tế • 01/08/2019</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Sự kiện <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child events">
+						<figure><img src="images/home/img_event.jpg" alt=""></figure>
+						<div class="events__title">
+							<h3>Dignissim mauris hendrerit donec mauris, ornare.</h3>
+						</div>
+						<div class="events__content">
+							<p>Urna nascetur turpis sed tempus est placerat. Eleifend orci ullamcorper aliquam, accumsan nulla imperdiet elit. In rhoncus massa dolor ac.</p>
+							<p>TPHCM • 01/08/2019</p>
+							<div class="events__content--btn">
+								<a href="#" class="events__content--btn--blue">Đăng ký</a>
+								<a href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_event.jpg" alt=""></figure>
+						<div class="events__title">
+							<h3>Dignissim mauris hendrerit donec mauris, ornare.</h3>
+						</div>
+						<div class="events__content">
+							<p>Urna nascetur turpis sed tempus est placerat. Eleifend orci ullamcorper aliquam, accumsan nulla imperdiet elit. In rhoncus massa dolor ac.</p>
+							<p>TPHCM • 01/08/2019</p>
+							<div class="events__content--btn">
+								<a href="#" class="events__content--btn--blue">Đăng ký</a>
+								<a href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_event.jpg" alt=""></figure>
+						<div class="events__title">
+							<h3>Dignissim mauris hendrerit donec mauris, ornare.</h3>
+						</div>
+						<div class="events__content">
+							<p>Urna nascetur turpis sed tempus est placerat. Eleifend orci ullamcorper aliquam, accumsan nulla imperdiet elit. In rhoncus massa dolor ac.</p>
+							<p>TPHCM • 01/08/2019</p>
+							<div class="events__content--btn">
+								<a href="#" class="events__content--btn--blue">Đăng ký</a>
+								<a href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child news">
+						<figure><img src="images/home/img_event.jpg" alt=""></figure>
+						<div class="events__title">
+							<h3>Dignissim mauris hendrerit donec mauris, ornare.</h3>
+						</div>
+						<div class="events__content">
+							<p>Urna nascetur turpis sed tempus est placerat. Eleifend orci ullamcorper aliquam, accumsan nulla imperdiet elit. In rhoncus massa dolor ac.</p>
+							<p>TPHCM • 01/08/2019</p>
+							<div class="events__content--btn">
+								<a href="#" class="events__content--btn--blue">Đăng ký</a>
+								<a href="#">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Top bình luận <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child topComment">
+						<div class="topComment__poster">
+							<figure><img src="images/home/img_film01.jpg" alt=""></figure>
+							<div class="blockSlide__slide__child--info">
+								<h3>Interstellar</h3>
+								<p>2014</p>
+								<div class="rating rating--five">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="topComment__content">
+							<p>Sem interdum sed parturient in. Blandit consectetur adipiscing in amet integer quis ornare. Aliquam sed faucibus in libero tellus vitae dui, accumsan aliquet. Urna sagittis dui velit id nibh pharetra. Amet facilisis etiam amet vestibulum pellentesque tortor.</p>
+							<div class="topComment__content__user">
+								<figure><img src="images/home/img_user.jpg" alt=""></figure>
+								<div class="topComment__content__user--info">
+									<p>John Williams</p>
+									<p>2 ngày trước</p>
+									<div class="rating rating--five">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="topComment__interactive">
+								<p><i class="fas fa-heart"></i> 16</p>
+								<p><img src="images/home/icon_comment.png" alt=""> 5</p>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child topComment">
+						<div class="topComment__poster">
+							<figure><img src="images/home/img_film01.jpg" alt=""></figure>
+							<div class="blockSlide__slide__child--info">
+								<h3>Birdman</h3>
+								<p>2014</p>
+								<div class="rating rating--five">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="topComment__content">
+							<p>Sem interdum sed parturient in. Blandit consectetur adipiscing in amet integer quis ornare. Aliquam sed faucibus in libero tellus vitae dui, accumsan aliquet. Urna sagittis dui velit id nibh pharetra. Amet facilisis etiam amet vestibulum pellentesque tortor.</p>
+							<div class="topComment__content__user">
+								<figure><img src="images/home/img_user.jpg" alt=""></figure>
+								<div class="topComment__content__user--info">
+									<p>John Williams</p>
+									<p>2 ngày trước</p>
+									<div class="rating rating--five">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="topComment__interactive">
+								<p><i class="fas fa-heart"></i> 16</p>
+								<p><img src="images/home/icon_comment.png" alt=""> 5</p>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child topComment">
+						<div class="topComment__poster">
+							<figure><img src="images/home/img_film01.jpg" alt=""></figure>
+							<div class="blockSlide__slide__child--info">
+								<h3>Interstellar</h3>
+								<p>2014</p>
+								<div class="rating rating--five">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+						<div class="topComment__content">
+							<p>Sem interdum sed parturient in. Blandit consectetur adipiscing in amet integer quis ornare. Aliquam sed faucibus in libero tellus vitae dui, accumsan aliquet. Urna sagittis dui velit id nibh pharetra. Amet facilisis etiam amet vestibulum pellentesque tortor.</p>
+							<div class="topComment__content__user">
+								<figure><img src="images/home/img_user.jpg" alt=""></figure>
+								<div class="topComment__content__user--info">
+									<p>John Williams</p>
+									<p>2 ngày trước</p>
+									<div class="rating rating--five">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="topComment__interactive">
+								<p><i class="fas fa-heart"></i> 16</p>
+								<p><img src="images/home/icon_comment.png" alt=""> 5</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Top bình chọn <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film01.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--rank"><p>#1</p></div>
+						<div class="blockSlide__slide__child--info">
+							<h3>Interstellar</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film02.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--rank"><p>#2</p></div>
+						<div class="blockSlide__slide__child--info">
+							<h3>The Theory of Everything</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film03.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--rank"><p>#3</p></div>
+						<div class="blockSlide__slide__child--info">
+							<h3>Les Misérables</h3>
+							<p>2012</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film04.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Birdman</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film05.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>The Imitation Game</h3>
+							<p>2014</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film06.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Coco</h3>
+							<p>2017</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child">
+						<figure><img src="images/home/img_film07.jpg" alt=""></figure>
+						<div class="blockSlide__slide__child--info">
+							<h3>Spotlight</h3>
+							<p>2016</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="blockSlide">
+				<h2 class="tagName">Đang chiếu <i class="fas fa-chevron-right"></i></h2>
+				<div class="blockSlide__slide">
+					<div class="blockSlide__slide__child showing">
+						<figure><img src="images/home/img_bannerfilm.jpg" alt=""></figure>
+						<div class="showing__title">
+							<h3>7 phim điện ảnh có doanh thu nội địa kém nhưng thắng lớn nhờ thị trường quốc tế</h3>
+							<p>Điện ảnh quốc tế • 01/08/2019</p>
+						</div>
+						<div class="filmInfo">
+							<h2>LA LA LAND</h2>
+							<p class="filmInfo__category">2016 • Comedy, Drama, Music • 2h 8m</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<p class="filmInfo__content">Câu chuyện tình yêu tuyệt đẹp giữa chàng nhạc công piano tài hoa Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao?</p>
+							<div class="filmInfo__action">
+								<a href="#">Xem phim</a>
+								<a href="#">Thông tin phim</a>
+								<a href="#">+ Thêm vào thư viện</a>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child showing">
+						<figure><img src="images/home/img_bannerfilm.jpg" alt=""></figure>
+						<div class="filmInfo">
+							<h2>LA LA LAND</h2>
+							<p class="filmInfo__category">2016 • Comedy, Drama, Music • 2h 8m</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<p class="filmInfo__content">Câu chuyện tình yêu tuyệt đẹp giữa chàng nhạc công piano tài hoa Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao?</p>
+							<div class="filmInfo__action">
+								<a href="#">Xem phim</a>
+								<a href="#">Thông tin phim</a>
+								<a href="#">+ Thêm vào thư viện</a>
+							</div>
+						</div>
+					</div>
+					<div class="blockSlide__slide__child showing">
+						<figure><img src="images/home/img_bannerfilm.jpg" alt=""></figure>
+						<div class="showing__title">
+							<h3>7 phim điện ảnh có doanh thu nội địa kém nhưng thắng lớn nhờ thị trường quốc tế</h3>
+							<p>Điện ảnh quốc tế • 01/08/2019</p>
+						</div>
+						<div class="filmInfo">
+							<h2>LA LA LAND</h2>
+							<p class="filmInfo__category">2016 • Comedy, Drama, Music • 2h 8m</p>
+							<div class="rating rating--five">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<p class="filmInfo__content">Câu chuyện tình yêu tuyệt đẹp giữa chàng nhạc công piano tài hoa Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao?</p>
+							<div class="filmInfo__action">
+								<a href="#">Xem phim</a>
+								<a href="#">Thông tin phim</a>
+								<a href="#">+ Thêm vào thư viện</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="editorChoice">
+				<h2 class="tagName">Editor’s Choice <i class="fas fa-chevron-right"></i></h2>
+				<div class="twoblock">
+					<div>
+						<div class="twoblock__left">
+							<div class="filmInfo">
+								<h2>Your Name</h2>
+								<p class="filmInfo__category">2016 • Anime • 1h 34m</p>
+								<div class="rating rating--five">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<p class="filmInfo__content">Mitsuha luôn chán chường với cuộc sống tẻ nhạt của mình và mơ ước được làm anh chàng đẹp trai sống tại thủ đô. Trong khi đó, Taki hằng đêm lại nhìn thấy mình trong hình hài cô gái vùng miền quê. Ước mơ của cả 2 đã thành sự thật khi sao chổi nghìn năm xuất hiện và rồi cứ cách ngày lại được hoán đổi cơ thể cho nhau.</p>
+								<div class="filmInfo__action">
+									<a href="#">Xem phim</a>
+									<a href="#">Thông tin phim</a>
+									<a href="#">+ Thêm vào thư viện</a>
+								</div>
+							</div>
+						</div>
+						<div class="twoblock__right">
+							<img src="images/home/img_bannerfilm01.jpg" alt="">
+							<video class="videoBanner__video" src="" poster="images/home/img_bannerfilm01.jpg" type="video/mp4" muted autoplay loop></video>
+						</div>
+					</div>
+					<div>
+						<div class="twoblock__left">
+							<div class="filmInfo">
+								<h2>LA LA LAND</h2>
+								<p class="filmInfo__category">2016 • Comedy, Drama, Music • 2h 8m</p>
+								<div class="rating rating--five">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<p class="filmInfo__content">Câu chuyện tình yêu tuyệt đẹp giữa chàng nhạc công piano tài hoa Sebastian và cô diễn viên mới nổi xinh đẹp Mia Dolan. Thế nhưng, ở thiên đường điện ảnh Hollywood, khi thành công và sự nổi tiếng đến, họ sẽ phải đối mặt ra sao?</p>
+								<div class="filmInfo__action">
+									<a href="#">Xem phim</a>
+									<a href="#">Thông tin phim</a>
+									<a href="#">+ Thêm vào thư viện</a>
+								</div>
+							</div>
+						</div>
+						<div class="twoblock__right">
+							<img src="images/home/bg_banner.jpg" alt="">
+							<video class="videoBanner__video" src="" poster="images/home/bg_banner.jpg" type="video/mp4" muted autoplay loop></video>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="partner">
+			<div class="container"></div>
+		</section>
 	</main>
 	<footer>
 		
