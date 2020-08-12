@@ -1,0 +1,113 @@
+/* News */
+a {
+    color: #000;
+}
+a:focus, a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.wrap-view h5 a {
+    color: #333;
+}
+.mv-news {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.news-title {
+    position: absolute;
+    width: 136px;
+    height: 52px;
+    left: 135px;
+    top: 248px;
+}
+.news-title h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.wrap-news h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-top: 10px;
+    color: #000;
+}
+.wrap-news h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: #000;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.wrap-news p, .wrap-view p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.wrap-news p span, .wrap-view p span {
+    color: #f7a333;
+}
+.wrap-view h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+    padding-top: 34px;
+}
+.wrap-view h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 137.8%;
+    color: #000000;
+    padding-right: 3rem;
+}
+.wrap-view h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+.wrap-view .row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box-right .row {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.box-right p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: rgba(51, 51, 51, 0.7);
+}
+a.btn-download {
+    background: #1a1a1a;
+    border-radius: 25px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 39px;
+}
+.pt32 {
+    padding-top: 32px;
+}
