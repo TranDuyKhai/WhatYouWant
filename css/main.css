@@ -9,6 +9,24 @@ a:focus, a:hover {
 .wrap-view h5 a {
     color: #333;
 }
+.pt20 {
+    padding-top: 20px;
+}
+.pt30 {
+    padding-top: 30px;
+}
+.pt32 {
+    padding-top: 32px;
+}
+.pb32 {
+    padding-bottom: 32px;
+}
+.pt50 {
+    padding-top: 50px;
+}
+.mb70 {
+    margin-bottom: 70px;
+}
 .mv-news {
     position: relative;
     z-index: 0;
@@ -31,6 +49,26 @@ a:focus, a:hover {
     letter-spacing: -0.02em;
     color: #fff;
 }
+.detail-news h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 130%;
+    color: #000000;
+    padding-top: 52px;
+    padding-bottom: 6px;
+}
+.detail-news p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 155.56%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.detail-news p span {
+    color: #f7a333;
+}
 .wrap-news h3 {
     font-style: normal;
     font-weight: bold;
@@ -47,6 +85,12 @@ a:focus, a:hover {
     padding-top: 1rem;
     line-height: 1.5;
 }
+.detail-news p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 155.56%;
+}
 .wrap-news p, .wrap-view p {
     font-style: normal;
     font-weight: normal;
@@ -57,14 +101,13 @@ a:focus, a:hover {
 .wrap-news p span, .wrap-view p span {
     color: #f7a333;
 }
-.wrap-view h3 {
+.wrap-view h3, .detail-news h3 {
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     color: #000000;
-    padding-top: 34px;
 }
-.wrap-view h4 {
+.wrap-view h4, .detail-news h4 {
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -72,7 +115,7 @@ a:focus, a:hover {
     color: #000000;
     padding-right: 3rem;
 }
-.wrap-view h5 {
+.wrap-view h5, .detail-news h5 {
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -107,7 +150,4 @@ a.btn-download {
     text-transform: uppercase;
     color: #fff;
     padding: 15px 39px;
-}
-.pt32 {
-    padding-top: 32px;
 }
