@@ -141,7 +141,7 @@ a:focus, a:hover {
 a.btn-download {
     background: #1a1a1a;
     border-radius: 25px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -150,4 +150,10 @@ a.btn-download {
     text-transform: uppercase;
     color: #fff;
     padding: 15px 39px;
+}
+/*-- Login --*/
+.bg-login {
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
