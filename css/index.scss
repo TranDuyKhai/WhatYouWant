@@ -6,7 +6,7 @@
 	position: relative;
 	z-index: 0;
 	padding-bottom: 170px;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	overflow: hidden;
 	&__content{
 		position: absolute;
@@ -29,6 +29,11 @@
 		transform: translateX(-50%);
 		.slick-list{
 			overflow: initial;
+		}
+		&__slide{
+			.btn-arrow{
+				top: 30%;
+			}
 		}
 	}
 }

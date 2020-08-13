@@ -38,71 +38,122 @@ figure{
 		padding: 20px;
 		border-right: 1px solid #ccc;
 	}
-	input{
-		width: 300px;
-		border-radius: 5px;
-		background: none;
-		padding: 10px 15px;
-		outline: none;
-	}
-	button{
-		border: none;
-		background: no-repeat;
-		transform: translateX(-40px);
-	}
-	&__menu{
-		ul{
+	&__navbar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+		max-width: calc(100% - 100px);
+		width: 100%;
+		input{
+			width: 300px;
+			border-radius: 5px;
+			background: none;
+			padding: 10px 15px;
+			outline: none;
+		}
+		button{
+			border: none;
+			background: no-repeat;
+			transform: translateX(-40px);
+		}
+		&__menu{
+			ul{
+				display: flex;
+				padding: 0;
+				list-style: none;
+				li{
+					&:not(:last-of-type){
+						margin-right: 30px;
+					}
+					a{
+						color: #4D4D4D;
+						font-weight: 600;
+						font-size: 1.4rem;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		&__user{
 			display: flex;
-			padding: 0;
-			list-style: none;
-			li{
-				&:not(:last-of-type){
-					margin-right: 30px;
+			&--login{
+				display: none;
+				justify-content: space-between;
+				align-items: center;
+				figure{
+					margin-right: 20px;
+				}
+				p{
+					margin-right: 40px;
 				}
 				a{
 					color: #4D4D4D;
+					text-decoration: none;
+					font-size: 2.2rem;
+				}
+			}
+			&--register{
+				a{
+					color: #00A4D4;
 					font-weight: 600;
 					font-size: 1.4rem;
 					text-decoration: none;
+					&:first-of-type{
+						margin-right: 30px;
+					}
+				}
+			}
+			&.login{
+				.header__navbar__user--login{
+					display: flex;
+				}
+				.header__navbar__user--register{
+					display: none;
 				}
 			}
 		}
-	}
-	&__user{
-		display: flex;
-		&--login{
+		&__hamburger{
+			width: 25px;
+			height: 25px;
 			display: none;
 			justify-content: space-between;
 			align-items: center;
-			figure{
-				margin-right: 20px;
-			}
-			p{
-				margin-right: 40px;
-			}
-			a{
-				color: #4D4D4D;
-				text-decoration: none;
-				font-size: 2.2rem;
+			.dots{
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background-color: #000;
 			}
 		}
-		&--register{
-			a{
-				color: #00A4D4;
-				font-weight: 600;
-				font-size: 1.4rem;
-				text-decoration: none;
-				&:first-of-type{
-					margin-right: 30px;
+	}
+	@include tablet{
+		top: 0;
+		border-radius: 0;
+		&__logo{
+			border-right: none;
+		}
+		&__navbar{
+			max-width: 50%;
+			input{
+				display: none;
+			}
+			button{
+				transform: unset;
+			}
+			&__menu{
+				display: none;
+			}
+			&__user{
+				&--login{
+					flex-flow: row-reverse nowrap;
+					p{
+						display: none;
+					}
 				}
 			}
-		}
-		&.login{
-			.header__user--login{
+			&__hamburger{
 				display: flex;
-			}
-			.header__user--register{
-				display: none;
 			}
 		}
 	}
@@ -168,14 +219,14 @@ figure{
 			width: 50px;
 			height: 50px;
 			border-radius: 50%;
-			background: rgba(2,0,36,0.5);
+			background: rgba(38,38,38,0.5);
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-decoration: none;
 			color: #fff;
 			position: absolute;
-			top: 30%;
+			top: 50%;
 			transform: translateY(-50%);
 			z-index: 1;
 			i{
@@ -250,7 +301,7 @@ figure{
 		text-decoration: none;
 		color: #fff;
 		position: absolute;
-		top: 30%;
+		top: 50%;
 		transform: translateY(-50%);
 		z-index: 1;
 		i{
