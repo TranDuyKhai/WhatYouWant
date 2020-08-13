@@ -32,16 +32,17 @@
 
 </head>
 <body>
-	<header class="header">
-		<h1 class="header__logo">
-			<img src="images/common/icon_favicon.png" alt="what you want">
-			<a href="index.html"></a>
-		</h1>
+<header class="header">
+	<h1 class="header__logo">
+		<img src="images/common/icon_favicon.png" alt="what you want">
+		<a href="index.html"></a>
+	</h1>
+	<div class="header__navbar">
 		<form action="index.html" method="post">
 			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,...">
 			<button type="submit"><i class="fas fa-search"></i></button>
 		</form>
-		<div class="header__menu">
+		<div class="header__navbar__menu">
 			<ul>
 				<li><a href="#">MỚI NHẤT</a></li>
 				<li><a href="#">PHỔ BIẾN</a></li>
@@ -50,23 +51,24 @@
 				<li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
 			</ul>
 		</div>
-		<div class="header__user login">
-			<div class="header__user--login">
+		<div class="header__navbar__user login">
+			<div class="header__navbar__user--login">
 				<figure><img src="images/common/img_user.jpg" alt=""></figure>
 				<p>John Williams &nbsp;<i class="fas fa-chevron-down"></i></p>
 				<a href="#"><i class="far fa-bell"></i></a>
 			</div>
-			<div class="header__user--register">
+			<div class="header__navbar__user--register">
 				<a href="user/login.html">ĐĂNG NHẬP</a>
 				<a href="user/register.html">TẠO TÀI KHOẢN</a>
 			</div>
 		</div>
-		<div class="header__hamburger">
-			<span class="header__hamburger__line header__hamburger__line--one"></span>
-			<span class="header__hamburger__line header__hamburger__line--two"></span>
-			<span class="header__hamburger__line header__hamburger__line--three"></span>
+		<div class="header__navbar__hamburger">
+			<span class="dots dots--one"></span>
+			<span class="dots dots--two"></span>
+			<span class="dots dots--three"></span>
 		</div>
-	</header>
+	</div>
+</header>
 	<main>
 		<section class="mv-news">
 			<figure class="mv__bg"><img src="images/news/img-top-news.png"></figure>
