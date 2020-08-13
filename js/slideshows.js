@@ -12,9 +12,34 @@ $(function(){
 		prevArrow: '<a href="#prevArrow" class="btn-arrow btn-arrow-left"><i class="fas fa-chevron-left"></i></a>',
 	    nextArrow:'<a href="#nextArrow" class="btn-arrow btn-arrow-right"><i class="fas fa-chevron-right"></i></a>',
 	});
+	/*var n = -1,
+		lengthSlick = 6;
+    $('.btn-arrow').on('click', function(){
+    	if($(this).is('.btn-arrow-left')){
+    		n--;
+    	}else{
+    		n++;
+    	}
+    	$.each($('.slick-slide'), function(){
+    		console.log($(this).data('slick-index'));
+    		if($(this).data('slick-index') > n && $(this).data('slick-index') <= n + lengthSlick){
+    			if($(this).data('slick-index') < 0){
+
+    			}
+    			$(this).addClass('dim');
+    		}else{
+    			$(this).removeClass('dim');
+    		}
+    	});
+    });*/
 	$('.mv .blockSlide__slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		slick.$slides.eq(nextSlide).addClass('here');
-		console.log(slick);
+        $.each($('.slick-slide'), function(){
+	        if($(this).data('slick-index') > currentSlide && $(this).data('slick-index') <= currentSlide + (slick.$slides.length / 2)){
+	        	$(this).addClass('dim');
+	        }else{
+	        	$(this).removeClass('dim');
+	        }
+        });
 	});
 	$('.category').slick({
 		dots: false,

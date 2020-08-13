@@ -26,7 +26,7 @@ figure{
 	@include flexDisplay(space-between, center);
 	max-width: 1210px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	z-index: 5;
 	top: 30px;
 	left: 50%;
@@ -192,6 +192,11 @@ figure{
 			position: relative;
 			margin: 0 15px;
 			outline: none;
+			opacity: 0.6;
+			transition: all 0.5s ease;
+			&.dim{
+				opacity: 1;
+			}
 			&--info{
 				background-color: #fff;
 				padding: 10px;
