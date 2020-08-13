@@ -331,7 +331,7 @@ a.btn-download {
     }
     .login .box-login {
         position: relative;
-        left: 0;
+        left: 0!important;
         right: 0;
         top: 0;
         background: #fff;
