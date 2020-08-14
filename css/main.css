@@ -6,7 +6,7 @@ a:focus, a:hover {
     opacity: 0.8;
     text-decoration: none;
 }
-.col-md-6 {
+.row-fix {
     padding-left: 0;
     padding-right: 0;
 }
@@ -253,7 +253,7 @@ a.btn-download {
     padding: 14px 28px;
 }
 .btn-blue-lg {
-    max-width: 430px;
+    max-width: 90%;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -376,20 +376,20 @@ a.btn-download {
     -webkit-transition: all 250ms ease;
     transition: all 250ms ease;
 }
-.login  .radio input[type="radio"]:checked + .radio-label:before {
+.login .radio input[type="radio"]:checked + .radio-label:before {
     background-color: #00a4d4;
     box-shadow: inset 0 0 0 4px #f4f4f4;
 }
-.login  .radio input[type="radio"]:focus + .radio-label:before {
+.login .radio input[type="radio"]:focus + .radio-label:before {
     outline: none;
     border-color: #00a4d4;
 }
-.login  .radio input[type="radio"]:disabled + .radio-label:before {
+.login .radio input[type="radio"]:disabled + .radio-label:before {
     box-shadow: inset 0 0 0 4px #f4f4f4;
     border-color: #b4b4b4;
     background: #b4b4b4;
 }
-.login  .radio input[type="radio"] + .radio-label:empty:before {
+.login .radio input[type="radio"] + .radio-label:empty:before {
     margin-right: 0;
 }
 .opacity08 {
@@ -414,23 +414,15 @@ a.btn-download {
     font-size: 27px;
 }
 
-
-@media all and (max-width: 480px) {
-    .login .box-login .form-input {
-        width: 80%;
-    }
-    .btn-blue {
-        padding: 12px 30%;
-    }
-    .btn-blue-lg {
-        max-width: 90%;
-    }
-    .btn-blue-lg {
-        padding: 12px 5%;
+@media screen and (max-width: 1440px) {
+    .login .box-login {
+        left: 54.6%;
     }
 }
-
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .mv-news {
+        margin-top: 11%;
+    }
     .bg-login {
         background: transparent;
     }
@@ -456,8 +448,21 @@ a.btn-download {
         margin-right: auto;
     }
 }
-@media all and (max-width: 1440px) {
-    .login .box-login {
-        left: 54.6%;
+
+@media screen and (max-width: 480px) {
+    .mv-news {
+        margin-top: 22%;
+    }
+    .login .box-login .form-input {
+        width: 80%;
+    }
+    .btn-blue {
+        padding: 12px 30%;
+    }
+    .btn-blue-lg {
+        max-width: 90%;
+    }
+    .btn-blue-lg {
+        padding: 12px 5%;
     }
 }
