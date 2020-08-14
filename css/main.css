@@ -81,6 +81,9 @@ a:focus, a:hover {
 .mt15 {
     margin-top: 15px;
 }
+.mb15 {
+    margin-bottom: 15px;
+}
 .mt25 {
     margin-top: 25px;
 }
@@ -452,7 +455,7 @@ a.btn-download {
 .setting-list ul li:last-child a {
     color: #ff5252;
 }
-.subscription h2 {
+.subscription h2, .payment h2 {
     font-style: normal;
     font-weight: bold;
     font-size: 27px;
@@ -514,6 +517,23 @@ a.btn-download {
     text-transform: uppercase;
     color: #262626;
     padding-bottom: 24px;
+}
+.payment {
+    max-width: 570px;
+}
+.payment .form-group label {
+    font-weight: bold;
+    font-size: 17px;
+    color: #262626;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.payment .form-control {
+    background: #fff;
+    border: 1px solid #262626;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
 }
 
 @media screen and (max-width: 1440px) {
