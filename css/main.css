@@ -413,7 +413,31 @@ a.btn-download {
     text-align: center;
     font-size: 27px;
 }
-
+.setting-list ul {
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.setting-list ul li {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 3.2;
+    color: #000000;
+    list-style: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+.setting-list ul li a {
+    color: #000;
+}
+.setting-list ul li a:hover {
+    opacity: 0.8;
+}
+.float-right {
+    float: right;
+}
+.setting-list ul li:last-child a {
+    color: #ff5252;
+}
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
@@ -447,6 +471,9 @@ a.btn-download {
         margin-left: auto;
         margin-right: auto;
     }
+    .setting-list ul {
+        padding-right: 40px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -464,5 +491,8 @@ a.btn-download {
     }
     .btn-blue-lg {
         padding: 12px 5%;
+    }
+    .setting-list ul {
+        padding-right: 40px;
     }
 }
