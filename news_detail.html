@@ -38,10 +38,11 @@
 		<a href="index.html"></a>
 	</h1>
 	<div class="header__navbar">
-		<form action="index.html" method="post">
+		<form action="index.html" method="post" class="search_form">
 			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,...">
 			<button type="submit"><i class="fas fa-search"></i></button>
 		</form>
+		<button class="header__navbar__btnSearch"><i class="fas fa-search"></i></button>
 		<div class="header__navbar__menu">
 			<ul>
 				<li><a href="#">MỚI NHẤT</a></li>
@@ -69,129 +70,132 @@
 		</div>
 	</div>
 </header>
-	<main>
-		<section class="mv-news">
-			<figure class="mv__bg"><img src="images/news/img-top-news.png"></figure>
-			<div class="common-title">
-				<h2>Tin tức</h2>
-			</div>
-		</section>
-		<!-- Content -->
-		<section class="container detail-news">
-			<div class="col-md-8">
-				<figure><img class="img-fluid" src="images/news/img-news017.png" alt="Tổng hợp nhân vật trong thương hiệu đình đám Star Wars (P1)"></figure>
-				<h2>Tổng hợp nhân vật trong thương hiệu đình đám Star Wars (P1)</h2>
-				<p><span>Admin</span> - 9 phút trước - 12.546 lượt xem</p>
-				<hr>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus, nisi ac ultrices maximus, tellus est vulputate nulla, id elementum turpis tortor at tortor. Maecenas sollicitudin sapien eu lorem sagittis, ac tempor augue pellentesque. Sed ultrices auctor libero, vitae auctor mauris molestie eu. Mauris sollicitudin magna nec lobortis gravida. Duis suscipit quam sit amet tincidunt pretium. Nulla cursus ante vitae lacinia pulvinar. Aliquam ac augue mauris. Nunc id lorem non erat tincidunt eleifend eget sed sapien. Nulla consectetur interdum bibendum.
-				</p>
-				<p>	Nullam egestas vitae lectus quis vestibulum. Integer rhoncus lorem libero, id cursus purus malesuada non. Pellentesque justo orci, posuere eget viverra vitae, vestibulum et nunc. Praesent commodo feugiat dolor, vel euismod libero eleifend at. Morbi eleifend felis eget fringilla dapibus. Morbi maximus, tellus sit amet congue laoreet, eros velit euismod justo, et fringilla metus est pulvinar leo. Sed at elit laoreet, hendrerit purus sed, congue justo. Vivamus sollicitudin nulla orci, eget varius enim tempor non. Mauris vel lacus fermentum, lobortis felis eget, sodales lacus.</p>
-				<figure class="pt32 pb32"><img class="img-fluid" src="images/news/img-news017.png" alt="Tổng hợp nhân vật trong thương hiệu đình đám Star Wars (P1)"></figure>
-				<p>Nunc semper, nibh eu iaculis vehicula, erat risus tristique felis, faucibus aliquet nibh justo nec diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean imperdiet aliquam ante ultrices placerat. Integer malesuada diam eu ante pulvinar pharetra. Aenean in metus at nibh cursus aliquam. Phasellus malesuada odio ligula, sed vestibulum lorem hendrerit id. Nunc porttitor enim luctus, ultrices eros et, fringilla orci. Integer vehicula rutrum egestas. Nulla sagittis erat non lacus porttitor, sit amet egestas turpis iaculis.</p>
-				<p>Nam auctor nisl nec arcu elementum bibendum. Donec sollicitudin tellus massa, et suscipit tellus molestie in. In hac habitasse platea dictumst. Phasellus mattis velit eu tristique fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque sit amet sollicitudin nisl, eget rhoncus dolor. Curabitur ullamcorper tellus vel nulla scelerisque, at luctus est sodales. Etiam at porttitor mi. Fusce sed bibendum orci, ut ultricies sapien. Phasellus ullamcorper odio mi, quis dictum nisl aliquam eu. Nullam suscipit tortor tortor, sit amet tempus urna molestie et. Maecenas at orci consectetur, maximus arcu a, fermentum orci. Mauris non ex arcu.</p>
-				<p>Ut ac ligula eu purus bibendum iaculis. Sed luctus eros ac magna sagittis tincidunt. Phasellus rutrum pharetra nisi sit amet fermentum. In ligula turpis, vehicula eget nulla eu, dignissim dictum ante. Proin vel interdum arcu, vitae imperdiet urna. Quisque nec facilisis tortor. Praesent ligula enim, elementum sed magna sagittis, lacinia pellentesque orci. Curabitur luctus sollicitudin massa, ac vulputate mauris gravida eu.</p>
-			</div>
-			<div class="col-md-4 box-right">
-				<h3>Bài viết xem nhiều</h3>
-				<div class="row">
-					<div class="col-md-5">
-						<figure><img class="img-fluid" src="images/news/img-news012.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
-					</div>
-					<div class="col-md-7">
-						<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
-						<p>9 phút trước</p>
-					</div>
+<main>
+	<section class="mv-news">
+		<figure class="mv__bg"><img src="images/news/img-top-news.png"></figure>
+		<div class="common-title">
+			<h2>Tin tức</h2>
+		</div>
+	</section>
+	<!-- Content -->
+	<section class="container detail-news">
+		<div class="col-md-8">
+			<figure><img class="img-fluid" src="images/news/img-news017.png" alt="Tổng hợp nhân vật trong thương hiệu đình đám Star Wars (P1)"></figure>
+			<h2>Tổng hợp nhân vật trong thương hiệu đình đám Star Wars (P1)</h2>
+			<p><span>Admin</span> - 9 phút trước - 12.546 lượt xem</p>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus, nisi ac ultrices maximus, tellus est vulputate nulla, id elementum turpis tortor at tortor. Maecenas sollicitudin sapien eu lorem sagittis, ac tempor augue pellentesque. Sed ultrices auctor libero, vitae auctor mauris molestie eu. Mauris sollicitudin magna nec lobortis gravida. Duis suscipit quam sit amet tincidunt pretium. Nulla cursus ante vitae lacinia pulvinar. Aliquam ac augue mauris. Nunc id lorem non erat tincidunt eleifend eget sed sapien. Nulla consectetur interdum bibendum.
+			</p>
+			<p>	Nullam egestas vitae lectus quis vestibulum. Integer rhoncus lorem libero, id cursus purus malesuada non. Pellentesque justo orci, posuere eget viverra vitae, vestibulum et nunc. Praesent commodo feugiat dolor, vel euismod libero eleifend at. Morbi eleifend felis eget fringilla dapibus. Morbi maximus, tellus sit amet congue laoreet, eros velit euismod justo, et fringilla metus est pulvinar leo. Sed at elit laoreet, hendrerit purus sed, congue justo. Vivamus sollicitudin nulla orci, eget varius enim tempor non. Mauris vel lacus fermentum, lobortis felis eget, sodales lacus.</p>
+			<figure class="pt32 pb32"><img class="img-fluid" src="images/news/img-news017.png" alt="Tổng hợp nhân vật trong thương hiệu đình đám Star Wars (P1)"></figure>
+			<p>Nunc semper, nibh eu iaculis vehicula, erat risus tristique felis, faucibus aliquet nibh justo nec diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean imperdiet aliquam ante ultrices placerat. Integer malesuada diam eu ante pulvinar pharetra. Aenean in metus at nibh cursus aliquam. Phasellus malesuada odio ligula, sed vestibulum lorem hendrerit id. Nunc porttitor enim luctus, ultrices eros et, fringilla orci. Integer vehicula rutrum egestas. Nulla sagittis erat non lacus porttitor, sit amet egestas turpis iaculis.</p>
+			<p>Nam auctor nisl nec arcu elementum bibendum. Donec sollicitudin tellus massa, et suscipit tellus molestie in. In hac habitasse platea dictumst. Phasellus mattis velit eu tristique fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque sit amet sollicitudin nisl, eget rhoncus dolor. Curabitur ullamcorper tellus vel nulla scelerisque, at luctus est sodales. Etiam at porttitor mi. Fusce sed bibendum orci, ut ultricies sapien. Phasellus ullamcorper odio mi, quis dictum nisl aliquam eu. Nullam suscipit tortor tortor, sit amet tempus urna molestie et. Maecenas at orci consectetur, maximus arcu a, fermentum orci. Mauris non ex arcu.</p>
+			<p>Ut ac ligula eu purus bibendum iaculis. Sed luctus eros ac magna sagittis tincidunt. Phasellus rutrum pharetra nisi sit amet fermentum. In ligula turpis, vehicula eget nulla eu, dignissim dictum ante. Proin vel interdum arcu, vitae imperdiet urna. Quisque nec facilisis tortor. Praesent ligula enim, elementum sed magna sagittis, lacinia pellentesque orci. Curabitur luctus sollicitudin massa, ac vulputate mauris gravida eu.</p>
+		</div>
+		<div class="col-md-4 box-right">
+			<h3>Bài viết xem nhiều</h3>
+			<div class="row">
+				<div class="col-md-5">
+					<figure><img class="img-fluid" src="images/news/img-news012.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
 				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<figure><img class="img-fluid" src="images/news/img-news013.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
-					</div>
-					<div class="col-md-7">
-						<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
-						<p>9 phút trước</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<figure><img class="img-fluid" src="images/news/img-news014.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
-					</div>
-					<div class="col-md-7">
-						<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
-						<p>9 phút trước</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<figure><img class="img-fluid" src="images/news/img-news015.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
-					</div>
-					<div class="col-md-7">
-						<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
-						<p>9 phút trước</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<figure><img class="img-fluid" src="images/news/img-news016.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
-					</div>
-					<div class="col-md-7">
-						<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
-						<p>9 phút trước</p>
-					</div>
-				</div>
-				<hr>
-			</div>
-		</section>
-	</main>
-	<div class="pt50"><hr></div>
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__menu">
-				<div class="footer__menu__child">
-					<h2>WHAT YOU WANT</h2>
-					<ul>
-						<li><a href="#">Email: info@whatyouwant.co</a></li>
-						<li><a href="#">Phone: +84901467773</a></li>
-						<li><a href="#">Address: 20A Trần Kế Xương, P.7, Q.Phú Nhuận, TPHCM</a></li>
-					</ul>
-				</div>
-				<div class="footer__menu__child">
-					<h2>TÀI KHOẢN</h2>
-					<ul>
-						<li><a href="#">Đăng ký</a></li>
-						<li><a href="#">Đăng nhập</a></li>
-						<li><a href="#">Khôi phục tài khoản</a></li>
-						<li><a href="#">Báo cáo sự cố</a></li>
-					</ul>
-				</div>
-				<div class="footer__menu__child">
-					<h2>PHẢN HỒI</h2>
-					<ul>
-						<li><a href="#">Chính sách bảo mật</a></li>
-						<li><a href="#">Phản hồi</a></li>
-						<li><a href="#">Đánh giá chúng tôi</a></li>
-						<li><a href="#">Đăn ký nhận thông báo</a></li>
-					</ul>
-				</div>
-				<div class="footer__menu__child">
-					<h2>SOCIAL MEDIA</h2>
-					<ul>
-						<li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-						<li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
-					</ul>
+				<div class="col-md-7">
+					<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
+					<p>9 phút trước</p>
 				</div>
 			</div>
-			<div class="footer__info">
-				<p>Copyright © 2019 What You Want Co., Ltd. All Rights Reserved. Powered by Letweb</p>
-				<div class="footer__info__btn">
-					<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
-					<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			<div class="row">
+				<div class="col-md-5">
+					<figure><img class="img-fluid" src="images/news/img-news013.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
 				</div>
+				<div class="col-md-7">
+					<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
+					<p>9 phút trước</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<figure><img class="img-fluid" src="images/news/img-news014.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
+				</div>
+				<div class="col-md-7">
+					<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
+					<p>9 phút trước</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<figure><img class="img-fluid" src="images/news/img-news015.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
+				</div>
+				<div class="col-md-7">
+					<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
+					<p>9 phút trước</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<figure><img class="img-fluid" src="images/news/img-news016.png" alt="Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ"></figure>
+				</div>
+				<div class="col-md-7">
+					<h5><a href="">Vừa thoát khỏi 'mê cung', Kaya Scodelario chạy thục mạng vì thảm hoạ</a></h5>
+					<p>9 phút trước</p>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</section>
+</main>
+<div class="pt50"><hr></div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__menu">
+			<div class="footer__inApp">
+				<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
+				<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			</div>
+			<div class="footer__menu__child footer__menu__child--address">
+				<h2>WHAT YOU WANT</h2>
+				<ul>
+					<li><a href="#">Email: info@whatyouwant.co</a></li>
+					<li><a href="#">Phone: +84901467773</a></li>
+					<li><a href="#">Address: 20A Trần Kế Xương, P.7, Q.Phú Nhuận, TPHCM</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--account">
+				<h2>TÀI KHOẢN</h2>
+				<ul>
+					<li><a href="#">Đăng ký</a></li>
+					<li><a href="#">Đăng nhập</a></li>
+					<li><a href="#">Khôi phục tài khoản</a></li>
+					<li><a href="#">Báo cáo sự cố</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--faq">
+				<h2>PHẢN HỒI</h2>
+				<ul>
+					<li><a href="#">Chính sách bảo mật</a></li>
+					<li><a href="#">Phản hồi</a></li>
+					<li><a href="#">Đánh giá chúng tôi</a></li>
+					<li><a href="#">Đăn ký nhận thông báo</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--social">
+				<h2>SOCIAL MEDIA</h2>
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+				</ul>
 			</div>
 		</div>
-	</footer>
-	
+		<div class="footer__info">
+			<p>Copyright © 2019 What You Want Co., Ltd. All Rights Reserved. Powered by Letweb</p>
+			<div class="footer__inApp">
+				<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
+				<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</footer>
 
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
 	<script src="https://kit.fontawesome.com/28ba50e86f.js" crossorigin="anonymous"></script>
