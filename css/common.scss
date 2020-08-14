@@ -3,9 +3,12 @@
 
 body{
 	font-family: "Open Sans", sans-serif;
+	max-width: 1440px;
+	margin: auto;
 }
 
 body>main{
+	overflow: hidden;
 	-ms-overflow-x: hidden;
 	@supports (-ms-ime-align: auto) {
 		overflow: hidden;
@@ -369,11 +372,42 @@ figure{
 				font-style: italic;
 			}
 		}
+		.footer__inApp{
+			display: none;
+		}
 	}
 	&__info{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 20px 0 0;
+	}
+	@include tablet{
+		&__menu{
+			flex-flow: row wrap;
+			&__child{
+				&--address{
+					width: 100%;
+				}
+				&--account{
+					width: 50%;
+				}
+				&--faq{
+					width: 50%;
+				}
+				&--social{
+					width: 100%;
+					ul{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						flex-flow: row wrap;
+						li{
+							width: 50%;
+						}
+					}
+				}
+			}
+		}
 	}
 }

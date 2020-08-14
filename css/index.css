@@ -1,9 +1,7 @@
 .mv {
   position: relative;
   z-index: 0;
-  padding-bottom: 170px;
-  margin-bottom: 70px;
-  overflow: hidden; }
+  margin-bottom: 250px; }
   .mv__content {
     position: absolute;
     top: 50%;
@@ -20,7 +18,7 @@
     max-width: 1170px;
     width: 100%;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translate(-50%, 50%); }
     .mv .blockSlide .slick-list {
       overflow: initial; }
     .mv .blockSlide__slide .btn-arrow {

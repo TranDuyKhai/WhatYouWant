@@ -1,7 +1,10 @@
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  max-width: 1440px;
+  margin: auto; }
 
 body > main {
+  overflow: hidden;
   -ms-overflow-x: hidden; }
   @supports (-ms-ime-align: auto) {
     body > main {
@@ -289,10 +292,30 @@ figure {
           text-decoration: none; }
     .footer__menu__child:first-of-type ul li a {
       font-style: italic; }
+    .footer__menu .footer__inApp {
+      display: none; }
   .footer__info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 0; }
+  @media screen and (max-width: 1023px) {
+    .footer__menu {
+      flex-flow: row wrap; }
+      .footer__menu__child--address {
+        width: 100%; }
+      .footer__menu__child--account {
+        width: 50%; }
+      .footer__menu__child--faq {
+        width: 50%; }
+      .footer__menu__child--social {
+        width: 100%; }
+        .footer__menu__child--social ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-flow: row wrap; }
+          .footer__menu__child--social ul li {
+            width: 50%; } }
 
 /*# sourceMappingURL=common.css.map */

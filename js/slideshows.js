@@ -18,31 +18,11 @@ $(function(){
 		    		slidesToShow: 3,
 		    		slidesToScroll: 1,
 		    		infinite: true,
-		    		dots: true
 		    	}
 		    }
 	    ]
 	});
-/*	var n = -1,
-		lengthSlick = 6;
-    $('.btn-arrow').on('click', function(){
-    	console.log('n: ' + n);
-    	if($(this).is('.btn-arrow-left')){
-    		n--;
-    	}else{
-    		n++;
-    	}
-    	$.each($('.slick-slide'), function(){
-    		if($(this).data('slick-index') > n && $(this).data('slick-index') <= n + lengthSlick){
-    			$(this).addClass('dim');
-    		}else{
-    			$(this).removeClass('dim');
-    		}
-    	});
-    });*/
 	$('.mv .blockSlide__slide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		console.log('nextSlide: ' +nextSlide+ 'currentSlide: '+ currentSlide);
-		console.log(slick.$slides.eq(currentSlide).data('slick-index'));
         $.each($('.mv .blockSlide__slide .slick-slide'), function(index){
 	        if($(this).data('slick-index') > currentSlide && $(this).data('slick-index') <= currentSlide + (slick.$slides.length / 2)){
 	        	$(this).addClass('dim');
