@@ -535,7 +535,9 @@ a.btn-download {
     border-radius: 4px;
     height: 40px;
 }
-
+.payment .form-control.w40 {
+    width: 40%;
+}
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
