@@ -34,6 +34,14 @@ a:focus, a:hover {
     color: #fff;
     padding: 12px 36px;
 }
+.btn-white {
+    background: #fff;
+    border: 1px solid #00a4d4;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 12px 36px;
+}
 .wrap-view h5 a {
     color: #333;
 }
@@ -72,6 +80,12 @@ a:focus, a:hover {
 }
 .mt15 {
     margin-top: 15px;
+}
+.mt25 {
+    margin-top: 25px;
+}
+.mt34 {
+    margin-top: 34px;
 }
 .mb45 {
     margin-bottom: 45px;
@@ -438,6 +452,70 @@ a.btn-download {
 .setting-list ul li:last-child a {
     color: #ff5252;
 }
+.subscription h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.subscription p {
+    font-size: 15px;
+    line-height: 155.56%;
+    text-align: center;
+    color: #000000;
+}
+.subscription .btn-blue {
+    background: #00a4d4;
+    border-radius: 4px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    padding: 12px 36px;
+    margin: 3px;
+}
+.subscription .btn-white {
+    background: #fff;
+    border: 1px solid #00a4d4;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 12px 36px;
+    margin: 3px;
+}
+.subscription .box {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+}
+.subscription .box.box-height {
+    height: 380px;
+}
+.subscription .title {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #00a4d4;
+    padding-top: 48px;
+    padding-bottom: 12px;
+}
+.subscription .price {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #262626;
+    padding-bottom: 24px;
+}
+
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
@@ -494,5 +572,10 @@ a.btn-download {
     }
     .setting-list ul {
         padding-right: 40px;
+    }
+    .subscription .btn-blue, .subscription .btn-white {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
