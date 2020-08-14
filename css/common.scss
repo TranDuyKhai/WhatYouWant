@@ -59,6 +59,10 @@ figure{
 			border: none;
 			background: no-repeat;
 			transform: translateX(-40px);
+			outline: none;
+			&.header__navbar__btnSearch{
+				display: none;
+			}
 		}
 		&__menu{
 			ul{
@@ -137,21 +141,81 @@ figure{
 			border-right: none;
 		}
 		&__navbar{
-			max-width: 50%;
-			input{
-				display: none;
+			justify-content: flex-end;
+			form{
+				display: flex;
+				width: 8%;
+				overflow: hidden;
+				transition: all 0.5s ease;
+				transform-origin: right center;
+				input{
+					margin-right: 10px;
+					transform-origin: right center;
+					transition: all 0.5s ease;
+					transform: scale(0);
+				}
+				button{
+					transform: unset;
+					i{
+						font-size: 3rem;
+					}
+				}
+				&.expand{
+					width: 55%;
+					input{
+						transform: scale(1);
+					}
+				}
 			}
-			button{
-				transform: unset;
+			&__btnSearch{
+				display: block !important;
+				overflow: hidden;
+				outline: none;
+				i{
+					font-size: 3rem;
+				}
+				&.hide{
+					z-index: -1;
+				}
 			}
 			&__menu{
-				display: none;
+				height: 0;
+				overflow: hidden;
+				position: absolute;
+				width: 100%;
+				top: 80px;
+				left: 0;
+				transition: all 0.5s ease;
+				&.expand{
+					background: #fff;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100vh;
+					ul{
+						flex-flow: column wrap;
+						transform: translateY(-80px);
+						li{
+							margin: 20px 0;
+							a{
+								font-size: 2.2rem;
+							}
+						}
+					}
+				}
 			}
 			&__user{
 				&--login{
 					flex-flow: row-reverse nowrap;
 					p{
 						display: none;
+					}
+					figure{
+						margin-right: 30px;
+					}
+					a{
+						font-size: 3rem;
+						margin-right: 3rem;
 					}
 				}
 			}
@@ -289,6 +353,9 @@ figure{
 				}
 			}
 		}
+		.slick-list{
+			overflow: visible;
+		}
 	}
 }
 .twoblock{
@@ -381,8 +448,24 @@ figure{
 		justify-content: space-between;
 		align-items: center;
 		padding: 20px 0 0;
+		.footer__inApp{
+			justify-content: flex-end;
+			a{
+				margin-left: 20px;
+				margin-right: 0;
+			}
+		}
+	}
+	&__inApp{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		a{
+			margin-right: 20px;
+		}
 	}
 	@include tablet{
+		padding: 20px;
 		&__menu{
 			flex-flow: row wrap;
 			&__child{
@@ -407,6 +490,18 @@ figure{
 						}
 					}
 				}
+				&:not(:last-child){
+					margin-bottom: 20px;
+				}
+			}
+			.footer__inApp{
+				display: flex;
+				padding: 30px 0 50px;
+			}
+		}
+		&__info{
+			.footer__inApp{
+				display: none;
 			}
 		}
 	}

@@ -19,8 +19,6 @@
     width: 100%;
     left: 50%;
     transform: translate(-50%, 50%); }
-    .mv .blockSlide .slick-list {
-      overflow: initial; }
     .mv .blockSlide__slide .btn-arrow {
       top: 30%; }
 

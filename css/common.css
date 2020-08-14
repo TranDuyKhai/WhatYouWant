@@ -52,7 +52,10 @@ figure {
     .header__navbar button {
       border: none;
       background: no-repeat;
-      transform: translateX(-40px); }
+      transform: translateX(-40px);
+      outline: none; }
+      .header__navbar button.header__navbar__btnSearch {
+        display: none; }
     .header__navbar__menu ul {
       display: flex;
       padding: 0;
@@ -107,17 +110,64 @@ figure {
       .header__logo {
         border-right: none; }
       .header__navbar {
-        max-width: 50%; }
-        .header__navbar input {
-          display: none; }
-        .header__navbar button {
-          transform: unset; }
+        justify-content: flex-end; }
+        .header__navbar form {
+          display: flex;
+          width: 8%;
+          overflow: hidden;
+          transition: all 0.5s ease;
+          transform-origin: right center; }
+          .header__navbar form input {
+            margin-right: 10px;
+            transform-origin: right center;
+            transition: all 0.5s ease;
+            transform: scale(0); }
+          .header__navbar form button {
+            transform: unset; }
+            .header__navbar form button i {
+              font-size: 3rem; }
+          .header__navbar form.expand {
+            width: 55%; }
+            .header__navbar form.expand input {
+              transform: scale(1); }
+        .header__navbar__btnSearch {
+          display: block !important;
+          overflow: hidden;
+          outline: none; }
+          .header__navbar__btnSearch i {
+            font-size: 3rem; }
+          .header__navbar__btnSearch.hide {
+            z-index: -1; }
         .header__navbar__menu {
-          display: none; }
+          height: 0;
+          overflow: hidden;
+          position: absolute;
+          width: 100%;
+          top: 80px;
+          left: 0;
+          transition: all 0.5s ease; }
+          .header__navbar__menu.expand {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; }
+            .header__navbar__menu.expand ul {
+              flex-flow: column wrap;
+              transform: translateY(-80px); }
+              .header__navbar__menu.expand ul li {
+                margin: 20px 0; }
+                .header__navbar__menu.expand ul li a {
+                  font-size: 2.2rem; }
         .header__navbar__user--login {
           flex-flow: row-reverse nowrap; }
           .header__navbar__user--login p {
             display: none; }
+          .header__navbar__user--login figure {
+            margin-right: 30px; }
+          .header__navbar__user--login a {
+            font-size: 3rem;
+            margin-right: 3rem; }
         .header__navbar__hamburger {
           display: flex; } }
 
@@ -228,6 +278,8 @@ figure {
       .blockSlide__slide__child--title p {
         font-size: 1.5rem;
         line-height: 2; }
+  .blockSlide__slide .slick-list {
+    overflow: visible; }
 
 .twoblock {
   position: relative; }
@@ -299,23 +351,43 @@ figure {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 0; }
+    .footer__info .footer__inApp {
+      justify-content: flex-end; }
+      .footer__info .footer__inApp a {
+        margin-left: 20px;
+        margin-right: 0; }
+  .footer__inApp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .footer__inApp a {
+      margin-right: 20px; }
   @media screen and (max-width: 1023px) {
-    .footer__menu {
-      flex-flow: row wrap; }
-      .footer__menu__child--address {
-        width: 100%; }
-      .footer__menu__child--account {
-        width: 50%; }
-      .footer__menu__child--faq {
-        width: 50%; }
-      .footer__menu__child--social {
-        width: 100%; }
-        .footer__menu__child--social ul {
+    .footer {
+      padding: 20px; }
+      .footer__menu {
+        flex-flow: row wrap; }
+        .footer__menu__child--address {
+          width: 100%; }
+        .footer__menu__child--account {
+          width: 50%; }
+        .footer__menu__child--faq {
+          width: 50%; }
+        .footer__menu__child--social {
+          width: 100%; }
+          .footer__menu__child--social ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-flow: row wrap; }
+            .footer__menu__child--social ul li {
+              width: 50%; }
+        .footer__menu__child:not(:last-child) {
+          margin-bottom: 20px; }
+        .footer__menu .footer__inApp {
           display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-flow: row wrap; }
-          .footer__menu__child--social ul li {
-            width: 50%; } }
+          padding: 30px 0 50px; }
+      .footer__info .footer__inApp {
+        display: none; } }
 
 /*# sourceMappingURL=common.css.map */
