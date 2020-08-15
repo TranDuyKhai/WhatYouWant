@@ -120,6 +120,54 @@ figure{
 				}
 			}
 		}
+		&__notification{
+			position: absolute;
+			top: 100px;
+			right: 0;
+			transition: all 0.5s ease;
+			transform-origin: top center;
+			border-radius: 5px;
+			padding: 0 20px;
+			height: 0;
+			overflow: hidden;
+			background-color: #fff;
+			&::before{
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				content: '';
+				top: 0;
+				right: 20px;
+				transform: translateY(-50%) rotate(45deg);
+				background-color: #fff;
+			}
+			&--noti{
+				padding: 15px 0;
+				opacity: 0;
+				transition: all 0.3s ease;
+				transition-delay: 0.3s;
+				&:not(:last-of-type){
+					border-bottom: 1px solid #333;
+				}
+				p{
+					font-size: 1.3rem;
+					color: #000;
+					&:last-of-type{
+						color: rgba(0, 0, 0, 0.3);
+					}
+					span{
+						color: #00A4D4;
+					}
+				}
+			}
+			&.expand{
+				overflow: unset;
+				padding-top: 20px;
+				.header__navbar__notification--noti{
+					opacity: 1;
+				}
+			}
+		}
 		&__hamburger{
 			width: 25px;
 			height: 25px;
@@ -152,6 +200,7 @@ figure{
 					margin-right: 10px;
 					transform-origin: right center;
 					transition: all 0.5s ease;
+					transform-origin: right center;
 					transform: scale(0);
 				}
 				button{
@@ -221,6 +270,9 @@ figure{
 			}
 			&__hamburger{
 				display: flex;
+			}
+			&__notification{
+				right: 125px;
 			}
 		}
 	}
