@@ -465,6 +465,9 @@ a.btn-download {
     padding-bottom: 20px;
     text-align: center;
 }
+.payment h2 {
+    padding-bottom: 40px;
+}
 .subscription p {
     font-size: 15px;
     line-height: 155.56%;
@@ -500,6 +503,7 @@ a.btn-download {
 }
 .subscription .box.box-height {
     height: 380px;
+    padding-top: 25px;
 }
 .subscription .title {
     font-weight: bold;
@@ -535,9 +539,35 @@ a.btn-download {
     border-radius: 4px;
     height: 40px;
 }
-.payment .form-control.w40 {
-    width: 40%;
+.payment .form-control.w50 {
+    width: 50%;
 }
+.payment .frm {
+    display: flex;
+}
+.payment .frm .w50:first-child {
+    margin-right: 10px;
+}
+.payment .btn-blue-lg {
+    max-width: 100%;
+    margin-top: 30px;
+}
+.w49 {
+    width: 49%;
+}
+.payment ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.payment ul li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
@@ -572,7 +602,8 @@ a.btn-download {
         margin-right: auto;
     }
     .setting-list ul {
-        padding-right: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
 
@@ -593,7 +624,8 @@ a.btn-download {
         padding: 12px 5%;
     }
     .setting-list ul {
-        padding-right: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .subscription .btn-blue, .subscription .btn-white {
         display: block;
