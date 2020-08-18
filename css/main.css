@@ -9,6 +9,9 @@ a:focus, a:hover {
     opacity: 0.8;
     text-decoration: none;
 }
+.align-baseline {
+    vertical-align: baseline;
+}
 .row-fix {
     padding-left: 0;
     padding-right: 0;
@@ -607,6 +610,102 @@ a.btn-download {
     padding-bottom: 6px;
     color: #262626;
     font-style: normal;
+}
+.category-detail a {
+    color: #fff;
+    margin-bottom: 50px;
+    display: block;
+}
+.view-red {
+    background: linear-gradient(180deg, #FF3A44 0%, #D80000 100%);
+    opacity: 0.95;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0px 2px 2px 0px;
+    position: absolute;
+    top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.view-blue {
+    background: linear-gradient(180deg, #00C5CD 0%, #0080D8 100%)!important;
+    opacity: 0.95;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0px 2px 2px 0px;
+    position: absolute;
+    top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.view-yellow {
+    background: linear-gradient(180deg, #FFCA52 0%, #FF9C00 100%)!important;
+    opacity: 0.95;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0px 2px 2px 0px;
+    position: absolute;
+    top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.align-bottom {
+    vertical-align: bottom;
+}
+ul.pagination {
+    margin: 0 auto;
+    text-align: center;
+}
+ul.pagination li {
+    display: inline-flex;
+    list-style: none;
+}
+ul.pagination li a {
+    display: inline;
+    list-style: none;
+    background: #a6a6a6;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    width: 40px;
+    line-height: 40px;
+}
+ul.pagination li a.active {
+    background: #00a4d4;
+    border-radius: 4px;
 }
 @media screen and (max-width: 1440px) {
     .login .box-login {
