@@ -324,7 +324,9 @@ figure {
         font-size: 1.5rem;
         line-height: 2; }
   .blockSlide__slide .slick-list {
-    overflow: visible; }
+    overflow: visible;
+    width: calc(100% + 30px);
+    transform: translateX(-15px); }
 
 .twoblock {
   position: relative; }

@@ -411,6 +411,8 @@ figure{
 		}
 		.slick-list{
 			overflow: visible;
+			width: calc(100% + 30px);
+			transform: translateX(-15px);
 		}
 	}
 }
