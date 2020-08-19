@@ -1,11 +1,13 @@
 $(function(){
 
+	hideSlideMinus('.mv .blockSlide__slide');
 	initSlide('.mv .blockSlide__slide', 6, 1, 3, 1);
 	changeSlide('.mv .blockSlide__slide');
 
 	initSlide('.category', 4, 1, 3, 1);
 	changeSlide('.category');
 
+	hideSlideMinus('.viewmore');
 	initSlide('.viewmore', 6, 1, 3, 1);
 	changeSlide('.viewmore');
 
@@ -18,6 +20,7 @@ $(function(){
 	initSlide('.twoblock', 1, 1, 1, 1);
 	changeSlide('.twoblock');
 	
+	hideSlideMinus('.topComment');
 	initSlide('.topComment', 2, 1, 2, 1);
 	changeSlide('.topComment');
 	
@@ -34,6 +37,7 @@ $(function(){
 			var slick = $(element +' .slick-slide').length - $(element + ' .slick-cloned').length,
 			slick_show = $(element +' .slick-active').length;
 			if($(this).is('.btn-arrow-left')){
+				$(element+' .slick-slide').removeClass('op0');
 				$.each($(element+' .slick-slide'), function(){
 					if($(this).data('slick-index') >= n && $(this).data('slick-index') < n+ slick_show){
 						$(this).addClass('dim');
@@ -91,4 +95,13 @@ $(function(){
 			]
 		});
 	};
+	function hideSlideMinus(element){
+		$(element).on('init', function(event, slick){
+			$.each($(element+' .slick-slide'),function(){
+				if($(this).data('slick-index') == -1){
+					$(this).addClass('op0');
+				}
+			});
+		});
+	}
 });
