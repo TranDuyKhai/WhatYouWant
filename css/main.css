@@ -716,12 +716,80 @@ ul.pagination li a.active {
     background: #00a4d4;
     border-radius: 4px;
 }
+.box-editor {
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.box-editor figure {
+    float: left;
+}
+.box-editor figure img {
+    width: auto;
+    padding-right: 30px;
+}
+.box-editor h2 {
+    font-weight: bold;
+    font-size: 27px;
+    color: #262626;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.box-editor span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #808080;
+}
+.box-editor p {
+    font-weight: normal;
+    font-size: 15px;
+    color: #4d4d4d;
+    padding-right: 25px;
+    line-height: 155.56%;
+    padding-top: 12px;
+}
+.box-editor .end-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.box-editor .end-footer span {
+    font-size: 14px;
+    color: #ccc;
+}
+.box-editor .end-footer a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #00a4d4;
+}
+
+
+
+
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
     }
 }
 @media screen and (max-width: 768px) {
+    .box-editor p {
+        padding-left: 10px;
+    }
+    .box-editor .end-footer {
+        padding-left: 20px;
+    }
+    .box-editor figure {
+        float: none;
+    }
+    .box-editor figure img {
+        width: 100%;
+        padding-right: 0;
+    }
     .mb38 {
         margin-bottom: 20px!important;
     }
@@ -766,6 +834,12 @@ ul.pagination li a.active {
 }
 
 @media screen and (max-width: 480px) {
+    .box-editor h2, .box-editor span {
+        padding-left: 10px;
+    }
+    .box-editor .end-footer {
+        padding-left: 0px;
+    }
     .common-title h2 {
         font-size: 27px;
     }
