@@ -615,6 +615,13 @@ a.btn-download {
     color: #fff;
     margin-bottom: 50px;
     display: block;
+    clear: both;
+}
+.category-detail {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .view-red {
     background: linear-gradient(180deg, #FF3A44 0%, #D80000 100%);
@@ -687,11 +694,13 @@ a.btn-download {
 }
 ul.pagination {
     margin: 0 auto;
+    padding: 0;
     text-align: center;
 }
 ul.pagination li {
     display: inline-flex;
     list-style: none;
+    text-align: center;
 }
 ul.pagination li a {
     display: inline;
