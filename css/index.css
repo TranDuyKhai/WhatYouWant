@@ -182,40 +182,89 @@
 .editorChoice {
   margin-top: 70px; }
 
-.oscars .blockSlide__slide__child {
-  display: flex;
-  flex-flow: column;
-  transform: translateY(20%); }
-  .oscars .blockSlide__slide__child figure {
-    max-width: 170px;
-    width: 100%; }
-  .oscars .blockSlide__slide__child .oscars__content {
-    margin: 10px 0 0 5px; }
-    .oscars .blockSlide__slide__child .oscars__content .filmInfo h2 {
-      font-size: 1.6rem; }
-    .oscars .blockSlide__slide__child .oscars__content .filmInfo__category, .oscars .blockSlide__slide__child .oscars__content .filmInfo__content, .oscars .blockSlide__slide__child .oscars__content .filmInfo__action {
-      display: none; }
-.oscars--active {
-  display: flex !important;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-flow: unset !important;
-  transform: unset !important;
-  max-width: 960px;
-  width: 100%; }
-  .oscars--active figure {
-    max-width: 300px !important; }
-  .oscars--active .oscars__content {
-    margin: 0 0 0 30px !important; }
-    .oscars--active .oscars__content .filmInfo h2 {
-      font-size: 4rem; }
-    .oscars--active .oscars__content .filmInfo__category, .oscars--active .oscars__content .filmInfo__content, .oscars--active .oscars__content .filmInfo__action {
-      display: block !important; }
-.oscars__content {
-  margin-left: 30px; }
-.oscars .filmInfo__action a {
-  background-color: #00A4D4;
-  color: #fff; }
+.oscars {
+  max-width: 1440px;
+  width: 100%;
+  margin: 50px auto 0;
+  overflow: hidden; }
+  .oscars__slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .oscars__slide--big {
+      background-color: #fff;
+      max-width: 910px;
+      width: 100%;
+      z-index: 2; }
+      .oscars__slide--big::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background-color: #fff;
+        width: 80px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        transform: translateX(100%); }
+      .oscars__slide--big__child {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        outline: none; }
+        .oscars__slide--big__child figure {
+          max-width: 300px;
+          width: 100%; }
+      .oscars__slide--big .btn-arrow {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(38, 38, 38, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1; }
+        .oscars__slide--big .btn-arrow i {
+          font-size: 1.6rem; }
+        .oscars__slide--big .btn-arrow-left {
+          left: -75px; }
+        .oscars__slide--big .btn-arrow-right {
+          right: -75px; }
+    .oscars__slide--small {
+      max-width: 200px;
+      width: 100%;
+      transform: translateX(15px);
+      z-index: 0; }
+      .oscars__slide--small__child {
+        outline: none;
+        margin: 0 15px; }
+        .oscars__slide--small__child figure {
+          max-width: 170px;
+          width: 100%; }
+          .oscars__slide--small__child figure img {
+            width: 100%; }
+        .oscars__slide--small__child.op0 {
+          opacity: 0; }
+        .oscars__slide--small__child.dim {
+          opacity: 0.8; }
+        .oscars__slide--small__child__info {
+          background-color: #fff;
+          padding: 10px; }
+          .oscars__slide--small__child__info h3 {
+            color: #262626;
+            font-weight: bold;
+            font-size: 1.7rem; }
+          .oscars__slide--small__child__info p {
+            font-size: 1.5rem;
+            color: #262626;
+            font-weight: 300;
+            margin: 10px 0; }
+      .oscars__slide--small .slick-list {
+        overflow: visible; }
 
 .partner {
   background-color: #F2F2F2;
