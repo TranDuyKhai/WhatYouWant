@@ -2,6 +2,9 @@
 body {
     max-width: 100%;
 }
+.sp {
+    display: none;
+}
 a {
     color: #000;
 }
@@ -689,6 +692,28 @@ a.btn-download {
     padding-left: 5%;
     padding-right: 5%;
 }
+.view-purple {
+    background: linear-gradient(180deg, #BB72C7 0%, #6D2BA2 100%);
+    opacity: 0.85;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0px 2px 2px 0px;
+    position: absolute;
+    top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .align-bottom {
     vertical-align: bottom;
 }
@@ -754,8 +779,7 @@ ul.pagination li a.active {
 .box-editor .end-footer {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 24px;
     padding-right: 20px;
 }
 .box-editor .end-footer span {
@@ -767,7 +791,48 @@ ul.pagination li a.active {
     font-size: 14px;
     color: #00a4d4;
 }
-
+.box-editor strong {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+.box-editor small {
+    font-size: 14px;
+    color: #a6a6a6;
+}
+.comment {
+    color: #ccc;
+}
+.comment span {
+    font-weight: normal;
+    font-size: 12px!important;
+    color: #4d4d4d!important;
+}
+.tabs ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: -11px;
+    padding: 0;
+    overflow: hidden;
+}
+.tabs li {
+    float: left;
+}
+.tabs li a {
+    display: block;
+    color: #a6a6a6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.tabs li  a:hover:not(.active) {
+    color: #00a4d4;
+}
+.tabs li a.active {
+    font-weight: bold;
+    color: #00a4d4;
+    border-bottom: 1px solid #00a4d4;
+}
 
 
 
@@ -834,6 +899,12 @@ ul.pagination li a.active {
 }
 
 @media screen and (max-width: 480px) {
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
     .box-editor h2, .box-editor span {
         padding-left: 10px;
     }

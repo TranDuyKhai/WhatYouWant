@@ -24,7 +24,7 @@
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<title>Category detail</title>
+	<title>Top-ratings</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -102,16 +102,28 @@
 </header>
 <main>
 	<section class="mv-news mb38">
-		<figure class="mv__bg"><img src="images/category/img-category009.png" alt=""></figure>
+		<figure class="mv__bg"><img src="images/category/img-top-ratings.png" alt=""></figure>
 		<div class="common-title">
-			<h2>Thể loại: Gia đình</h2>
+			<h2>Top bình chọn</h2>
 		</div>
 	</section>
 	<!-- Content -->
 	<section class="container category-page">
-		<div class="col-md-12">
+		<div class="col-md-12 pc">
+			<div class="tabs">
+				<ul>
+					<li><a class="active" href="">Toàn thời gian</a></li>
+					<li><a href="">Tuần này</a></li>
+					<li><a href="">Tháng này</a></li>
+				</ul>
+				<div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 sp">
 			<select class="sort-name mb10">
-				<option>Sắp xếp tên A-Z</option>
+				<option>Toàn thời gian</option>
 			</select>
 			<div><hr></div>
 		</div>
@@ -120,6 +132,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film01.png" alt=""></figure>
+				<div class="view-red"><span>#1</span></div>
 				<h4>Interstellar</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -134,7 +147,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film02.png" alt=""></figure>
-				<div class="view-red"><span><img class="align-baseline" src="images/category/icon-imdb.png"> IMDB’s best</span></div>
+				<div class="view-yellow"><span>#2</span></div>
 				<h4>The Theory of Everything</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -149,7 +162,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film03.png" alt=""></figure>
-				<div class="view-blue"><span><img class="align-bottom" src="images/category/icon-start.png"> Phim phổ biến</span></div>
+				<div class="view-purple"><span>#3</div>
 				<h4>Les Misérables</h4>
 				<p>2012</p>
 				<div class="rating rating--five">
@@ -164,6 +177,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film04.png" alt=""></figure>
+				<div class="view-blue"><span>#4</div>
 				<h4>Les Misérables</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -178,6 +192,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film05.png" alt=""></figure>
+				<div class="view-blue"><span>#5</div>
 				<h4>The Imitation Game</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -192,6 +207,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film06.png" alt=""></figure>
+				<div class="view-blue"><span>#6</div>
 				<h4>Coco</h4>
 				<p>2017</p>
 				<div class="rating rating--five">
@@ -206,6 +222,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film01.png" alt=""></figure>
+				<div class="view-blue"><span>#7</div>
 				<h4>Interstellar</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -220,6 +237,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film02.png" alt=""></figure>
+				<div class="view-blue"><span>#8</div>
 				<h4>The Theory of Everything</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -234,7 +252,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film03.png" alt=""></figure>
-				<div class="view-yellow"><span><img class="align-bottom" src="images/category/icon-oscars.png"> Giải Oscars</span></div>
+				<div class="view-blue"><span>#9</span></div>
 				<h4>Les Misérables</h4>
 				<p>2012</p>
 				<div class="rating rating--five">
@@ -249,6 +267,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film04.png" alt=""></figure>
+				<div class="view-blue"><span>#10</span></div>
 				<h4>Les Misérables</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -263,6 +282,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film05.png" alt=""></figure>
+				<div class="view-blue"><span>#11</span></div>
 				<h4>The Imitation Game</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -277,6 +297,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film06.png" alt=""></figure>
+				<div class="view-blue"><span>#12</span></div>
 				<h4>Coco</h4>
 				<p>2017</p>
 				<div class="rating rating--five">
@@ -291,6 +312,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film01.png" alt=""></figure>
+				<div class="view-blue"><span>#13</span></div>
 				<h4>Interstellar</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -305,6 +327,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film02.png" alt=""></figure>
+				<div class="view-blue"><span>#14</span></div>
 				<h4>The Theory of Everything</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -319,6 +342,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film03.png" alt=""></figure>
+				<div class="view-blue"><span>#15</span></div>
 				<h4>Les Misérables</h4>
 				<p>2012</p>
 				<div class="rating rating--five">
@@ -333,6 +357,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film04.png" alt=""></figure>
+				<div class="view-blue"><span>#16</span></div>
 				<h4>Les Misérables</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -347,6 +372,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film05.png" alt=""></figure>
+				<div class="view-blue"><span>#17</span></div>
 				<h4>The Imitation Game</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -361,6 +387,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film06.png" alt=""></figure>
+				<div class="view-blue"><span>#18</span></div>
 				<h4>Coco</h4>
 				<p>2017</p>
 				<div class="rating rating--five">
@@ -375,6 +402,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film01.png" alt=""></figure>
+				<div class="view-blue"><span>#19</span></div>
 				<h4>Interstellar</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -389,6 +417,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film02.png" alt=""></figure>
+				<div class="view-blue"><span>#20</span></div>
 				<h4>The Theory of Everything</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -403,6 +432,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film03.png" alt=""></figure>
+				<div class="view-blue"><span>#21</span></div>
 				<h4>Les Misérables</h4>
 				<p>2012</p>
 				<div class="rating rating--five">
@@ -417,6 +447,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film04.png" alt=""></figure>
+				<div class="view-blue"><span>#22</span></div>
 				<h4>Les Misérables</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -431,6 +462,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film05.png" alt=""></figure>
+				<div class="view-blue"><span>#23</span></div>
 				<h4>The Imitation Game</h4>
 				<p>2014</p>
 				<div class="rating rating--five">
@@ -445,6 +477,7 @@
 		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 			<a href="">
 				<figure><img class="img-item" src="images/home/img_film06.png" alt=""></figure>
+				<div class="view-blue"><span>#24</span></div>
 				<h4>Coco</h4>
 				<p>2017</p>
 				<div class="rating rating--five">
@@ -457,25 +490,7 @@
 			</a>
 		</div>
 	</section>
-	<section class="pb45">
-		<ul class="pagination">
-			<li>
-				<a href="#" aria-label="Previous">
-					<span>&lt;</span>
-				</a>
-			</li>
-			<li><a class="active" href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li>
-				<a href="#" aria-label="Next">
-					<span>&gt;</span>
-				</a>
-			</li>
-		</ul>
-	</section>
+
 </main>
 <div><hr></div>
 <footer class="footer">
