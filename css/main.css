@@ -842,21 +842,34 @@ ul.pagination li a.active {
     }
 }
 @media screen and (max-width: 768px) {
-    .box-editor h2, .box-editor span {
-        padding-left: 10px;
+    .comments .box-editor .end-footer {
+        padding-bottom: 20px;
     }
-    .box-editor p {
-        padding-left: 10px;
+    .comments .box-editor h2 {
+        padding-top: 10px;
     }
-    .box-editor .end-footer {
-        padding-left: 20px;
-    }
-    .box-editor figure {
-        float: none;
-    }
-    .box-editor figure img {
-        width: 100%;
+    .comments .box-editor figure img {
         padding-right: 0;
+    }
+    .comments .box-editor h2, .box-editor span {
+        padding-left: 0;
+    }
+    .comments .box-editor p {
+        padding-left: 0;
+    }
+    .comments .box-editor figure {
+       padding-right: 10px;
+    }
+    .comments .box-editor h2 {
+        font-size: 22px;
+    }
+    .comments .box-editor {
+        border: none;
+        box-sizing: border-box;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: hidden;
+        margin-bottom: 30px;
     }
     .mb38 {
         margin-bottom: 20px!important;
@@ -908,11 +921,18 @@ ul.pagination li a.active {
     .sp {
         display: block;
     }
-    .box-editor h2, .box-editor span {
-        padding-left: 10px;
+    .comments .box-editor h2, .box-editor span {
+        padding-left: 0;
     }
-    .box-editor .end-footer {
-        padding-left: 0px;
+    .comments .box-editor h2 {
+        padding: 0;
+    }
+    .comments .box-editor .end-footer {
+        padding-left: 0;
+    }
+    .comments .box-editor figure {
+        float: left;
+        width: 50%;
     }
     .common-title h2 {
         font-size: 27px;
