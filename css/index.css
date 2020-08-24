@@ -20,7 +20,47 @@
     overflow: hidden; }
     .mv .blockSlide__slide .btn-arrow {
       top: 30%; }
+  .mv__bg img:last-of-type {
+    display: none; }
+  @media screen and (max-width: 767px) {
+    .mv {
+      margin-bottom: 220px; }
+      .mv__bg img:first-of-type {
+        display: none; }
+      .mv__bg img:last-of-type {
+        display: block; }
+      .mv__content {
+        transform: unset; }
+        .mv__content .filmInfo {
+          text-align: center; }
+          .mv__content .filmInfo .rating {
+            justify-content: center; }
+          .mv__content .filmInfo__content {
+            display: none; }
+          .mv__content .filmInfo__action {
+            justify-content: center; }
+            .mv__content .filmInfo__action a {
+              padding: 10px 30px 10px 10px; }
+              .mv__content .filmInfo__action a:first-of-type {
+                margin-right: 20px; }
+              .mv__content .filmInfo__action a:nth-of-type(2) {
+                display: none; }
+      .mv .blockSlide {
+        transform: translate(-50%, 60%); } }
 
+@media screen and (max-width: 767px) {
+  .just-for-you .twoblock__child {
+    flex-flow: column-reverse nowrap; }
+  .just-for-you .twoblock__content {
+    margin-top: 15px; }
+  .just-for-you .filmInfo__action a:not(:last-of-type) {
+    display: none; }
+  .just-for-you .filmInfo__action a:last-of-type {
+    width: 100%;
+    text-align: center; } }
+
+.category .blockSlide__slide__child figure {
+  border-radius: 10px; }
 .category .blockSlide__slide__child p {
   font-size: 2.7rem;
   color: #fff;
@@ -30,6 +70,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap; }
+@media screen and (max-width: 767px) {
+  .category .blockSlide__slide__child p {
+    font-size: 1.7rem; }
+  .category .slick-list {
+    width: calc(100% - 30px); } }
 
 .viewmore .blockSlide__slide__child--rank {
   width: 45px;
@@ -80,6 +125,28 @@
       text-decoration: none;
       border-radius: 5px;
       margin-top: 30px; }
+  @media screen and (max-width: 767px) {
+    .wywBanner {
+      margin-top: 40px; }
+      .wywBanner__bg {
+        display: flex;
+        justify-content: center;
+        height: 200px; }
+        .wywBanner__bg img {
+          width: auto;
+          height: 100%; }
+      .wywBanner__slogan {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; }
+        .wywBanner__slogan h2 {
+          font-size: 2.2rem; }
+        .wywBanner__slogan p {
+          font-size: 1.4rem; }
+        .wywBanner__slogan a {
+          max-width: 300px;
+          margin: 30px auto; } }
 
 .events .blockSlide__slide__child {
   box-shadow: 0 0 5px #333;

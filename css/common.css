@@ -241,6 +241,9 @@ figure {
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.2);
       border-radius: 5px; }
+  @media screen and (max-width: 767px) {
+    .filmInfo h2 {
+      font-size: 2.2rem; } }
 
 .tagName {
   font-size: 2.2rem;
@@ -250,6 +253,9 @@ figure {
     font-size: 1rem;
     margin-left: 5px;
     transform: translateY(-3px); }
+  @media screen and (max-width: 767px) {
+    .tagName {
+      padding: 0 20px; } }
 
 .rating {
   display: flex;
@@ -327,6 +333,14 @@ figure {
     overflow: visible;
     width: calc(100% + 30px);
     transform: translateX(-15px); }
+  @media screen and (max-width: 767px) {
+    .blockSlide {
+      margin: 40px auto 0;
+      padding: 0 0 0 15px; }
+      .blockSlide__slide__child {
+        margin: 0 5px; }
+      .blockSlide__slide .slick-list {
+        transform: unset; } }
 
 .twoblock {
   position: relative; }
@@ -366,6 +380,15 @@ figure {
     width: calc(50% + 90px); }
     .twoblock__video video {
       width: 100%; }
+  @media screen and (max-width: 767px) {
+    .twoblock {
+      padding: 0 20px; }
+      .twoblock__child {
+        flex-flow: column nowrap; }
+      .twoblock__content {
+        max-width: 100%; }
+      .twoblock__video {
+        width: 100%; } }
 
 .footer {
   background-color: #fff;

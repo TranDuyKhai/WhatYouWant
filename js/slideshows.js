@@ -6,7 +6,7 @@ $(function(){
 	changeSlide('.mv .blockSlide__slide');
 
 	swipeSlide('.category');
-	initSlide('.category', 4, 1, 3, 1);
+	initSlide('.category', 4, 1, 2, 1);
 	changeSlide('.category');
 
 	hideSlideMinus('.viewmore');
@@ -15,11 +15,11 @@ $(function(){
 	changeSlide('.viewmore');
 
 	swipeSlide('.news');
-	initSlide('.news', 3, 1, 3, 1);
+	initSlide('.news', 3, 1, 1, 1);
 	changeSlide('.news');
 
 	swipeSlide('.events');
-	initSlide('.events', 3, 1, 3, 1);
+	initSlide('.events', 3, 1, 1, 1);
 	changeSlide('.events');
 	
 	swipeSlide('.twoblock');
@@ -28,7 +28,7 @@ $(function(){
 	
 	hideSlideMinus('.topComment');
 	swipeSlide('.topComment');
-	initSlide('.topComment', 2, 1, 2, 1);
+	initSlide('.topComment', 2, 1, 1, 1);
 	changeSlide('.topComment');
 	
 	swipeSlide('.showing');
