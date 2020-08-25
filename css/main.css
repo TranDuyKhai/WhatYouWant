@@ -929,6 +929,7 @@ ul.pagination li a.active {
         margin-right: auto;
         left: 0;
         right: 0;
+        top: 20%;
         text-align: center;
     }
     .mv-news {
