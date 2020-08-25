@@ -852,7 +852,33 @@ ul.pagination li a.active {
     opacity: 0.8;
     padding-top: 12px;
 }
-
+.actor-detail .pl30 {
+    padding-left: 30px;
+}
+.btn {
+    font-size: 13px;
+    color: #00a4d4;
+    background: #fff;
+    border: 1px solid #00a4d4;
+    border-radius: 4px;
+    padding: 12px 20%;
+    line-height: 100px;
+}
+.btn-primary {
+    font-size: 13px;
+    color: #fff;
+    background: #00a4d4;
+    border: 1px solid #00a4d4;
+    border-radius: 4px;
+    padding: 12px 20%;
+    line-height: 100px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.mr5 {
+    margin-right: 5px;
+}
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
@@ -860,6 +886,12 @@ ul.pagination li a.active {
     }
 }
 @media screen and (max-width: 768px) {
+    .actor-detail h1, .actor-detail .date {
+        text-align: center;
+    }
+    .actor-detail .pl30 {
+        padding-left: 0;
+    }
     .comments .box-editor .end-footer {
         padding-bottom: 20px;
     }
