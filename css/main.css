@@ -833,7 +833,25 @@ ul.pagination li a.active {
     color: #00a4d4;
     border-bottom: 1px solid #00a4d4;
 }
-
+.actor-detail h1 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: #262626;
+}
+.actor-detail .img-avatar {
+    margin-top: -166px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+    border-radius: 4px;
+}
+.actor-detail .date {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: #4d4d4d;
+    opacity: 0.8;
+    padding-top: 12px;
+}
 
 
 @media screen and (max-width: 1440px) {
