@@ -851,6 +851,7 @@ ul.pagination li a.active {
     color: #4d4d4d;
     opacity: 0.8;
     padding-top: 12px;
+    padding-bottom: 20px;
 }
 .actor-detail .pl30 {
     padding-left: 30px;
@@ -873,6 +874,14 @@ ul.pagination li a.active {
     padding: 12px 20%;
     line-height: 100px;
 }
+.w200 {
+    max-width: 200px;
+    line-height: 30px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto;
+}
 .ml5 {
     margin-left: 5px;
 }
@@ -884,8 +893,57 @@ ul.pagination li a.active {
     left: 50%;
     top: 50%;
 }
-
-
+.actor-detail {
+    font-size: 15px;
+    line-height: 155.56%;
+    color: #262626;
+}
+.actor-detail .group span {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 130%;
+    color: #ffca52;
+    padding-right: 10px;
+}
+.actor-detail .group {
+    display: flex;
+    margin-top: 30px;
+}
+.actor-detail .group small {
+    font-size: 15px;
+    color: #4D4D4D;
+    padding-top: 14px;
+    padding-left: 10px;
+}
+.actor-detail h4 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 137.8%;
+    color: #262626;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.people-card img {
+    float: left;
+}
+.avatar-sm {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.people-card h4 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 137.8%;
+    color: #262626;
+    padding-top: 10px;
+}
+.people-card p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #262626;
+}
 
 
 @media screen and (max-width: 1440px) {
@@ -937,7 +995,7 @@ ul.pagination li a.active {
         margin-right: auto;
         left: 0;
         right: 0;
-        top: 20%;
+        top: 40%;
         text-align: center;
     }
     .mv-news {
@@ -980,6 +1038,9 @@ ul.pagination li a.active {
     .sp {
         display: block;
     }
+    .common-title {
+        top: 50%;
+    }
     .comments .box-editor h2, .box-editor span {
         padding-left: 0;
     }
@@ -1019,5 +1080,12 @@ ul.pagination li a.active {
         display: block;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .actor-detail .img-avatar {
+        text-align: center;
+        margin-top: -110px;
+    }
+    .actor-detail .img-avatar img {
+        width: 50%;
     }
 }
