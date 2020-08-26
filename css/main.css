@@ -879,6 +879,14 @@ ul.pagination li a.active {
 .mr5 {
     margin-right: 5px;
 }
+.icon-video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
