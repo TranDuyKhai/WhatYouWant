@@ -25,6 +25,9 @@ a:focus, a:hover {
 .text-left {
     text-align: left;
 }
+.text-right {
+    text-align: right;
+}
 .box-login .error {
     color: #ff5252;
     font-size: 13px;
@@ -878,7 +881,7 @@ ul.pagination li a.active {
     max-width: 200px;
     line-height: 30px;
     display: block;
-    padding: 10px;
+    padding: 4px;
     text-align: center;
     margin: 10px auto;
 }
@@ -930,6 +933,7 @@ ul.pagination li a.active {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
+    margin-bottom: 12px;
 }
 .people-card h4 {
     font-weight: bold;
@@ -944,6 +948,12 @@ ul.pagination li a.active {
     line-height: 20px;
     color: #262626;
 }
+.actor-detail .number {
+    text-align: right;
+    padding-top: 78px;
+    padding-right: 20px;
+}
+
 
 
 @media screen and (max-width: 1440px) {
@@ -1033,7 +1043,7 @@ ul.pagination li a.active {
 
 @media screen and (max-width: 480px) {
     .pc {
-        display: none;
+        display: none!important;
     }
     .sp {
         display: block;
