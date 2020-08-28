@@ -992,7 +992,6 @@ ul.pagination li a.active {
     font-size: 13px;
     color: #808080;
 }
-.people-card .comment .group
 .actor-detail .number {
     text-align: right;
     padding-top: 78px;
@@ -1033,6 +1032,15 @@ ul.pagination li a.active {
     border-radius: 4px;
     margin-top: 20px;
 }
+.comment-level {
+    padding-top: 20px;
+    padding-left: 10%;
+}
+.comment-level .line {
+    padding-bottom: 20px;
+}
+
+
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
