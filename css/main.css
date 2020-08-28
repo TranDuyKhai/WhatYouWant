@@ -945,12 +945,54 @@ ul.pagination li a.active {
     color: #262626;
     padding-top: 10px;
 }
-.people-card p {
+.people-card h4 small {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: #4d4d4d;
+    padding-left: 10px;
+}
+.people-card h5 {
     font-weight: normal;
     font-size: 15px;
     line-height: 20px;
     color: #262626;
 }
+.people-card p {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #4d4d4d;
+    padding-top: 10px;
+}
+.people-card .avatar {
+    display: table-cell;
+    width: 30px;
+    margin-right: 50px;
+    height: 100%;
+    float: left;
+}
+.people-card .avatar img {
+    border-radius: 50%;
+}
+.people-card .comment {
+    display: table-cell;
+}
+.people-card .comment .group {
+    margin-top: 20px;
+}
+.people-card .comment .group span {
+    padding-right: 10px;
+}
+.people-card .comment .group i {
+    color: #808080;
+}
+.people-card .comment .group b {
+    font-weight: normal;
+    font-size: 13px;
+    color: #808080;
+}
+.people-card .comment .group
 .actor-detail .number {
     text-align: right;
     padding-top: 78px;
