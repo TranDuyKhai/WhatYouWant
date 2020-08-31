@@ -392,7 +392,8 @@ figure {
 
 .footer {
   background-color: #fff;
-  padding: 40px; }
+  padding: 40px;
+  border-top: 1px solid #CCCCCC; }
   .footer__menu {
     display: flex;
     justify-content: space-between;
