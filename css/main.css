@@ -1039,10 +1039,13 @@ ul.pagination li a.active {
 .comment-level .line {
     padding-bottom: 20px;
 }
+
 .modal-dialog {
     max-width: 800px;
     margin: 30px auto;
 }
+
+
 
 .modal-body {
     position:relative;
@@ -1058,8 +1061,6 @@ ul.pagination li a.active {
     color:#fff;
     opacity:1;
 }
-
-
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
