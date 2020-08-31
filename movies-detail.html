@@ -106,8 +106,25 @@
 			<img src="images/category/img-movie-banner.png" alt="">
 		</figure>
 		<div class="icon-video">
-			<a href="https://player.vimeo.com/video/316956316?autoplay=1&title=0&byline=0&portrait=0" class="popup-video"><img src="images/category/img-video.png" alt=""></a>
+			<a class="popup-video video-btn" data-toggle="modal" data-src="https://www.youtube.com/watch?v=_8w9rOpV3gc" data-target="#myModal"><img src="images/category/img-video.png" alt=""></a>
 		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 	<!-- Content -->
 	<section class="container actor-detail">
@@ -588,7 +605,6 @@
 	</section>
 
 </main>
-<div><hr></div>
 <footer class="footer">
 	<div class="container">
 		<div class="footer__menu">
@@ -641,15 +657,12 @@
 		</div>
 	</div>
 </footer>
-	
-
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
 	<script src="assets/js/fontawesome.min.js"></script>
 	<script src="assets/plugins/slick/slick.min.js"></script>
 	<script src="assets/plugins/odometer/odometer.min.js"></script>
 	<script src="js/general.js"></script>
 	<script src="js/slideshows.js"></script>
-
 
 </body>
 
