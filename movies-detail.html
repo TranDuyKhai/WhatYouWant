@@ -20,6 +20,7 @@
 	<link href="assets/plugins/slick/slick.css" rel="stylesheet">
 	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
 	<link href="assets/plugins/odometer/odometer-theme-default.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/modal-video.min.css">
 
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
@@ -106,25 +107,8 @@
 			<img src="images/category/img-movie-banner.png" alt="">
 		</figure>
 		<div class="icon-video">
-			<a class="popup-video video-btn" data-toggle="modal" data-src="https://www.youtube.com/watch?v=_8w9rOpV3gc"><img src="images/category/img-video.png" data-target="#myModal"></a>
+			<a class="popup-video js-video-button" data-video-id='L61p2uyiMSo'><img src="images/category/img-video.png"></a>
 		</div>
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
 	</section>
 	<!-- Content -->
 	<section class="container actor-detail">
@@ -657,13 +641,16 @@
 		</div>
 	</div>
 </footer>
+
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
 	<script src="assets/js/fontawesome.min.js"></script>
 	<script src="assets/plugins/slick/slick.min.js"></script>
 	<script src="assets/plugins/odometer/odometer.min.js"></script>
 	<script src="js/general.js"></script>
 	<script src="js/slideshows.js"></script>
+	<script src="js/jquery-modal-video.min.js"></script>
 	<script src="js/main.js"></script>
+
 </body>
 
 </html>
