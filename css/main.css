@@ -1042,6 +1042,47 @@ ul.pagination li a.active {
 .popup-video {
     cursor: pointer;
 }
+.edit-profile {
+    font-size: 15px;
+    line-height: 20px;
+    color: #00a4d4;
+    padding-top: 24px;
+}
+.btn {
+    font-size: 13px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: normal;
+}
+.btnBlue {
+    color: #fff;
+    background: #00a4d4;
+}
+.btnWhite {
+    color: #00a4d4;
+    background: #fff;
+    border: 1px solid #00A4D4;
+}
+.profile-page .btn {
+    display: block;
+    margin-bottom: 4px;
+}
+.card {
+    border-radius: 4px;
+    color: #fff;
+}
+.bg-c-pink {
+    background: #f6638f;
+}
+.bg-c-orange {
+    background: #d46600;
+}
+.bg-c-blue {
+    background: #00a4d4;
+}
+.bg-c-violet {
+    background: #6d2ba2;
+}
 
 
 @media screen and (max-width: 1440px) {
@@ -1050,6 +1091,9 @@ ul.pagination li a.active {
     }
 }
 @media screen and (max-width: 768px) {
+    .edit-profile {
+        text-align: center;
+    }
     .actor-detail h1, .actor-detail .date {
         text-align: center;
     }
