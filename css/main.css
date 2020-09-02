@@ -1137,10 +1137,33 @@ ul.pagination li a.active {
 .profile-page .title-text a {
     color: #4d4d4d;
 }
-
-
-
-
+.icon-edit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.avatar-edit {
+    position: absolute;
+    left: 40%;
+    top: 36%;
+}
+.editText {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #4d4d4d;
+    padding: 10px;
+    max-width: 870px;
+}
+.frm-option {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    max-width: 430px;
+    padding: 10px;
+}
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
