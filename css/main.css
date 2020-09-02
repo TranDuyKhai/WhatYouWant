@@ -1137,8 +1137,46 @@ ul.pagination li a.active {
 .profile-page .title-text a {
     color: #4d4d4d;
 }
-
-
+.icon-edit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.avatar-edit {
+    position: absolute;
+    left: 40%;
+    top: 36%;
+}
+.editText {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #4d4d4d;
+    padding: 10px;
+    max-width: 870px;
+}
+.frm-option {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    max-width: 430px;
+    padding: 10px;
+}
+.d-flex {
+    display: flex;
+}
+.group-radio {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.group-radio .form-check {
+    padding-right: 20px;
+}
+.group-radio .form-check label {
+    vertical-align: middle;
+}
 
 
 @media screen and (max-width: 1440px) {
@@ -1260,9 +1298,6 @@ ul.pagination li a.active {
     }
     .login .box-login .form-input {
         width: 80%;
-    }
-    .btn-blue {
-        padding: 12px 30%;
     }
     .btn-blue-lg {
         max-width: 90%;
