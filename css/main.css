@@ -1164,6 +1164,21 @@ ul.pagination li a.active {
     max-width: 430px;
     padding: 10px;
 }
+.d-flex {
+    display: flex;
+}
+.group-radio {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.group-radio .form-check {
+    padding-right: 20px;
+}
+.group-radio .form-check label {
+    vertical-align: middle;
+}
+
+
 @media screen and (max-width: 1440px) {
     .login .box-login {
         left: 54.6%;
@@ -1283,9 +1298,6 @@ ul.pagination li a.active {
     }
     .login .box-login .form-input {
         width: 80%;
-    }
-    .btn-blue {
-        padding: 12px 30%;
     }
     .btn-blue-lg {
         max-width: 90%;
