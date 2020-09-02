@@ -11,6 +11,7 @@ a {
 a:focus, a:hover {
     opacity: 0.8;
     text-decoration: none;
+    cursor: pointer;
 }
 .align-baseline {
     vertical-align: baseline;
@@ -95,6 +96,9 @@ a:focus, a:hover {
 }
 .pl12 {
     padding-left: 12px;
+}
+.mt-15 {
+    margin-top: -15px;
 }
 .mt15 {
     margin-top: 15px;
@@ -1070,6 +1074,8 @@ ul.pagination li a.active {
 .profile-page .card {
     border-radius: 4px;
     color: #fff;
+    padding: 26px 0 26px 18px;
+    margin-bottom: 20px;
 }
 .bg-c-pink {
     background: #f6638f;
@@ -1090,18 +1096,50 @@ ul.pagination li a.active {
     font-weight: bold;
     font-size: 50px;
     color: #fff;
+    padding-right: 20px;
+}
+.profile-page .card .group {
+    padding-top: 10px;
 }
 .profile-page .card .group span {
     font-size: 13px;
     color: #fff;
+    padding-right: 8px;
 }
 .profile-page .card .group span a {
     color: #fff;
 }
+.profile-page .card .card-body .title {
+    padding-top: 6px;
+}
 .profile-page .card .card-body .title span {
-    font-weight: bold;
     font-size: 17px;
 }
+.profile-page .card .group span b {
+    font-weight: normal;
+}
+
+.profile-page h4 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 137.8%;
+    color: #262626;
+}
+.profile-page .title-text {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    padding-left: 11%;
+    font-weight: 600;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+.profile-page .title-text a {
+    color: #4d4d4d;
+}
+
+
+
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
