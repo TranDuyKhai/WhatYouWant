@@ -1067,7 +1067,7 @@ ul.pagination li a.active {
     display: block;
     margin-bottom: 4px;
 }
-.card {
+.profile-page .card {
     border-radius: 4px;
     color: #fff;
 }
@@ -1083,7 +1083,25 @@ ul.pagination li a.active {
 .bg-c-violet {
     background: #6d2ba2;
 }
-
+.profile-page .card .card-body {
+    display: flex;
+}
+.profile-page .card span {
+    font-weight: bold;
+    font-size: 50px;
+    color: #fff;
+}
+.profile-page .card .group span {
+    font-size: 13px;
+    color: #fff;
+}
+.profile-page .card .group span a {
+    color: #fff;
+}
+.profile-page .card .card-body .title span {
+    font-weight: bold;
+    font-size: 17px;
+}
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
