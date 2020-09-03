@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="icon" type="image/png" href="images/common/icon_favicon.png">
+	<!-- style -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-adjust.min.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
+	<link href="assets/plugins/odometer/odometer-theme-default.css" rel="stylesheet">
+
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<title>Profile-detail\Friends</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+	<h1 class="header__logo">
+		<img src="images/common/icon_favicon.png" alt="what you want">
+		<a href="index.html"></a>
+	</h1>
+	<div class="header__navbar">
+		<form action="index.html" method="post" class="search_form">
+			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,...">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+		<button class="header__navbar__btnSearch"><i class="fas fa-search"></i></button>
+		<div class="header__navbar__menu">
+			<ul>
+				<li><a href="#">MỚI NHẤT</a></li>
+				<li><a href="#">PHỔ BIẾN</a></li>
+				<li><a href="#">XEM PHIM</a></li>
+				<li><a href="#">TIN TỨC</a></li>
+				<li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+			</ul>
+		</div>
+		<div class="header__navbar__user login">
+			<div class="header__navbar__user--login">
+				<figure><img src="images/common/img_user.jpg" alt=""></figure>
+				<p>John Williams &nbsp;<i class="fas fa-chevron-down"></i></p>
+				<a href="#" class="user__noti"><i class="far fa-bell"></i></a>
+			</div>
+			<div class="header__navbar__user--register">
+				<a href="user/login.html">ĐĂNG NHẬP</a>
+				<a href="user/register.html">TẠO TÀI KHOẢN</a>
+			</div>
+		</div>
+		<div class="header__navbar__notification">
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+		</div>
+		<div class="header__navbar__hamburger">
+			<span class="dots dots--one"></span>
+			<span class="dots dots--two"></span>
+			<span class="dots dots--three"></span>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="mv-news">
+		<figure><img src="images/profile-detail/img-profile-banner.png" alt=""></figure>
+	</section>
+	<!-- Content -->
+	<section class="container actor-detail">
+		<div class="col-xs-12 col-md-5 col-lg-3 img-avatar">
+			<img src="images/profile-detail/img-avatar.png" alt="">
+		</div>
+		<div class="col-xs-12 col-md-7 col-lg-9 pl30">
+			<h1>John Williams</h1>
+			<p class="edit-profile"><i class="far fa-edit"></i>
+				 Cập nhật trang cá nhân</p>
+		</div>
+	</section>
+	<section class="container profile-page mt34">
+		<div class="col-md-12 pc">
+			<div class="tabs">
+				<ul>
+					<li><a href="">Tổng quan</a></li>
+					<li><a class="active" href="">Bạn bè</a></li>
+					<li><a href="">Thống kê dữ liệu</a></li>
+					<li><a href="">Bình luận của bạn</a></li>
+				</ul>
+				<div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container profile-page pt15">
+		<div class="col-md-12">
+			<div class="tabs-sub">
+				<ul>
+					<li><a class="active" href="">Danh bạ</a></li>
+					<li><a href="">Facebook</a></li>
+				</ul>
+				<div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="col-sm-12 col-md-9">
+			<form class="search-container">
+				<input type="text" id="search-bar" placeholder="Tìm bạn bè...">
+				<a href="#"><span class="search-icon"><i class="fas fa-search"></i></span></a>
+			</form>
+		</div>
+		<div class="col-sm-12 col-md-3 pt30">
+			<a class="btn-blue btn-add" href="">+ Thêm bạn</a>
+		</div>
+	</section>
+	<section class="container actor-detail">
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar01.png" alt="">
+					<h4>Ryan GoslingJennie Mckinney</h4>
+					<h5>(303) 555-0105</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar02.png" alt="">
+					<h4>Juanita Fox</h4>
+					<h5>(219) 555-0114</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar03.png" alt="">
+					<h4>Rosemary Cooper</h4>
+					<h5>(219) 555-0114</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar04.png" alt="">
+					<h4>Johnny Cooper</h4>
+					<h5>(201) 555-0124</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar05.png" alt="">
+					<h4>Jorge Simmmons</h4>
+					<h5>(303) 555-0105</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar06.png" alt="">
+					<h4>Kathryn Flores</h4>
+					<h5>(480) 555-0103</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar07.png" alt="">
+					<h4>Arlene Henry</h4>
+					<h5>(603) 555-0123</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar08.png" alt="">
+					<h4>Ricardo Bell</h4>
+					<h5>(319) 555-0115</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar09.png" alt="">
+					<h4>Connie Cooper</h4>
+					<h5>(217) 555-0113</h5>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-4 col-lg-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/profile-detail/avatar10.png" alt="">
+					<h4>Devon Flores</h4>
+					<h5>(262) 555-0131</h5>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="container pt30 mb45 text-center">
+		<a class="btn-blue" href="">Tải thêm</a>
+	</section>
+
+
+
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__menu">
+			<div class="footer__inApp">
+				<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
+				<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			</div>
+			<div class="footer__menu__child footer__menu__child--address">
+				<h2>WHAT YOU WANT</h2>
+				<ul>
+					<li><a href="#">Email: info@whatyouwant.co</a></li>
+					<li><a href="#">Phone: +84901467773</a></li>
+					<li><a href="#">Address: 20A Trần Kế Xương, P.7, Q.Phú Nhuận, TPHCM</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--account">
+				<h2>TÀI KHOẢN</h2>
+				<ul>
+					<li><a href="#">Đăng ký</a></li>
+					<li><a href="#">Đăng nhập</a></li>
+					<li><a href="#">Khôi phục tài khoản</a></li>
+					<li><a href="#">Báo cáo sự cố</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--faq">
+				<h2>PHẢN HỒI</h2>
+				<ul>
+					<li><a href="#">Chính sách bảo mật</a></li>
+					<li><a href="#">Phản hồi</a></li>
+					<li><a href="#">Đánh giá chúng tôi</a></li>
+					<li><a href="#">Đăng ký nhận thông báo</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--social">
+				<h2>SOCIAL MEDIA</h2>
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__info">
+			<p>Copyright © 2019 What You Want Co., Ltd. All Rights Reserved. Powered by Letweb</p>
+			<div class="footer__inApp">
+				<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
+				<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/fontawesome.min.js"></script>
+	<script src="assets/plugins/slick/slick.min.js"></script>
+	<script src="assets/plugins/odometer/odometer.min.js"></script>
+	<script src="js/general.js"></script>
+	<script src="js/slideshows.js"></script>
+
+</body>
+
+</html>
