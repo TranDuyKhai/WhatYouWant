@@ -41,11 +41,23 @@ a:focus, a:hover {
 .btn-blue {
     background: #00a4d4;
     border-radius: 4px;
-    font-style: normal;
     font-size: 13px;
     line-height: 18px;
     color: #fff;
     padding: 12px 36px;
+}
+.btn-save {
+    background: #00a4d4;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    padding: 12px 9px;
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 30%;
 }
 .btn-white {
     background: #fff;
@@ -1147,7 +1159,7 @@ ul.pagination li a.active {
     left: 40%;
     top: 36%;
 }
-.editText {
+.editText input {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 4px;
@@ -1155,7 +1167,7 @@ ul.pagination li a.active {
     font-size: 40px;
     color: #4d4d4d;
     padding: 10px;
-    max-width: 870px;
+    max-width: 100%;
 }
 .frm-option {
     border: 1px solid #ccc;
@@ -1177,7 +1189,9 @@ ul.pagination li a.active {
 .group-radio .form-check label {
     vertical-align: middle;
 }
-
+.select select, .select option {
+    width: 250px;
+}
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
@@ -1320,5 +1334,29 @@ ul.pagination li a.active {
     }
     .actor-detail .img-avatar img {
         width: 50%;
+    }
+    .editText {
+        padding-left: 10px;
+    }
+    .select select, .select option {
+        margin-left: 10px;
+        width: 100%;
+    }
+    .btn-save {
+        background: #00a4d4;
+        border-radius: 4px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #fff;
+        padding: 12px 9px;
+        display: block;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .icon-edit {
+        left: 80%;
+        top: 14%;
     }
 }
