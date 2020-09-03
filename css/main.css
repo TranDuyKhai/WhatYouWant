@@ -855,6 +855,36 @@ ul.pagination li a.active {
     color: #00a4d4;
     border-bottom: 1px solid #00a4d4;
 }
+.tabs-sub {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tabs-sub ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: -11px;
+    padding: 0;
+    overflow: hidden;
+}
+.tabs-sub li {
+    float: left;
+}
+.tabs-sub li a {
+    display: block;
+    color: #a6a6a6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.tabs-sub li  a:hover:not(.active) {
+    color: #808080;
+}
+.tabs-sub li a.active {
+    font-weight: bold;
+    color: #808080;
+    border-bottom: 1px solid #4d4d4d;
+}
 .actor-detail h1 {
     font-weight: bold;
     font-size: 40px;
@@ -957,9 +987,7 @@ ul.pagination li a.active {
 .people-card h4 {
     font-weight: bold;
     font-size: 17px;
-    line-height: 137.8%;
     color: #262626;
-    padding-top: 10px;
 }
 .people-card h4 small {
     font-weight: 300;
@@ -1192,6 +1220,46 @@ ul.pagination li a.active {
 .select select, .select option {
     width: 250px;
 }
+.search-container {
+    width: 400px;
+    float: right;
+    padding-top: 18px;
+}
+
+input#search-bar {
+    width: 100%;
+    height: 44px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #4d4d4d;
+}
+input#search-bar:focus {
+    border: 1px solid #008abf;
+    transition: 0.35s ease;
+    color: #008abf;
+}
+input#search-bar:focus::-webkit-input-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+.search-icon {
+    position: relative;
+    float: right;
+    top: -32px;
+    right: 10px;
+    font-size: 20px;
+    color: #4d4d4d;
+}
+
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
@@ -1358,5 +1426,13 @@ ul.pagination li a.active {
     .icon-edit {
         left: 80%;
         top: 14%;
+    }
+    .search-container {
+        width: 100%;
+    }
+    .btn-add {
+        width: 100%;
+        display: table;
+        text-align: center;
     }
 }
