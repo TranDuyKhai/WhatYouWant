@@ -1259,6 +1259,19 @@ input#search-bar:focus:-ms-placeholder {
     font-size: 20px;
     color: #4d4d4d;
 }
+.addFriend h2 {
+    font-weight: bold;
+    font-size: 27px;
+    color: #262626;
+}
+.addFriend input#search-bar {
+    width: 60%;
+}
+.addFriend .search-icon {
+    top: 13px;
+    right: 0;
+    left: -42%;
+}
 
 
 @media screen and (max-width: 1440px) {
@@ -1434,5 +1447,13 @@ input#search-bar:focus:-ms-placeholder {
         width: 100%;
         display: table;
         text-align: center;
+    }
+    .addFriend input#search-bar {
+        width: 100%;
+    }
+    .addFriend .search-icon {
+        top: -30px;
+        right: 0;
+        left: -5%;
     }
 }
