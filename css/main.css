@@ -1225,7 +1225,6 @@ ul.pagination li a.active {
     float: right;
     padding-top: 18px;
 }
-
 input#search-bar {
     width: 100%;
     height: 44px;
@@ -1289,9 +1288,90 @@ input#search-bar:focus:-ms-placeholder {
     font-size: 13px;
     line-height: 158.8%;
 }
-
-
-
+.library-new, .library-top {
+    max-width: 970px;
+}
+.library-top input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+}
+.library-top textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #4d4d4d;
+    font-size: 13px;
+    padding: 10px;
+}
+.library-top .form-check-label {
+    font-size: 13px;
+    line-height: 158.8%;
+    color: #4d4d4d;
+}
+.align-middle {
+    vertical-align: middle;
+}
+.library-new h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 155.56%;
+    color: #000000;
+}
+.library-new  {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.library-new  a {
+    color: #fff;
+    clear: both;
+}
+.library-new .img-item {
+    border-radius: 4px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+}
+.library-new h4 {
+    font-weight: bold;
+    font-size: 17px;
+    color: #262626;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.library-new p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 6px;
+    color: #262626;
+    font-style: normal;
+}
+.library-new .add {
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.library-new h5 {
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+.library-new .btnBlue {
+    margin: 60px auto;
+    display: block;
+    width: 140px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
@@ -1480,4 +1560,5 @@ input#search-bar:focus:-ms-placeholder {
         border-radius: 4px;
         padding: 10px;
     }
+
 }
