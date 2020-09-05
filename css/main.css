@@ -914,7 +914,7 @@ ul.pagination li a.active {
     background: #fff;
     border: 1px solid #00a4d4;
     border-radius: 4px;
-    padding: 12px 20%;
+    padding: 12px 10px;
     line-height: 100px;
 }
 .btn-primary {
@@ -1272,6 +1272,25 @@ input#search-bar:focus:-ms-placeholder {
     right: 0;
     left: -42%;
 }
+.profile-comment .block-comment {
+    max-width: 570px;
+    margin: 0 auto;
+}
+.profile-comment .block-comment p {
+    font-size: 13px;
+    line-height: 158.8%;
+    color: #262626;
+}
+.profile-comment .block-comment a {
+    color: #00a4d4;
+}
+.profile-comment .block-comment small {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+    line-height: 158.8%;
+}
+
+
 
 
 @media screen and (max-width: 1440px) {
@@ -1455,5 +1474,10 @@ input#search-bar:focus:-ms-placeholder {
         top: -30px;
         right: 0;
         left: -5%;
+    }
+    .profile-page .sp select {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
     }
 }
