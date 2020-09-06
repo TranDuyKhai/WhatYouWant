@@ -2,11 +2,25 @@
 body {
     max-width: 100%;
 }
+.footer {
+    margin-top: 20px;
+}
 .sp {
     display: none;
 }
 a {
     color: #000;
+}
+p {
+    font-size: 15px;
+    color: #262626
+}
+.form-control {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #4d4d4d;
+    padding: 10px;
 }
 a:focus, a:hover {
     opacity: 0.8;
@@ -975,6 +989,9 @@ ul.pagination li a.active {
     margin-top: 20px;
     margin-left: 10px;
 }
+.people-card {
+    margin-bottom: 20px;
+}
 .people-card img {
     float: left;
 }
@@ -1077,7 +1094,6 @@ ul.pagination li a.active {
     margin-top: 20px;
 }
 .comment-level {
-    padding-top: 20px;
     padding-left: 10%;
 }
 .comment-level .line {
@@ -1329,6 +1345,7 @@ input#search-bar:focus:-ms-placeholder {
 .library-new  a {
     color: #fff;
     clear: both;
+    display: block;
 }
 .library-new .img-item {
     border-radius: 4px;
@@ -1359,7 +1376,7 @@ input#search-bar:focus:-ms-placeholder {
 .library-new h5 {
     position: absolute;
     left: 30%;
-    top: 35%;
+    top: 40%;
     font-size: 15px;
     color: #4d4d4d;
 }
@@ -1372,6 +1389,140 @@ input#search-bar:focus:-ms-placeholder {
     margin-left: auto;
     margin-right: auto;
 }
+.library-new a.close-modal {
+    width: 36px;
+    height: 36px;
+}
+.addFirm h2 {
+    font-weight: bold;
+    font-size: 27px;
+    color: #262626;
+}
+.addFirm {
+    max-width: 830px;
+}
+.group-popup {
+    display: flex;
+}
+.group-popup input {
+    max-width: 350px;
+}
+.group-popup select {
+    max-width: 200px;
+}
+.group-popup .mx-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.close-img {
+    position: absolute;
+    top: -12.5px;
+    right: 0.5px;
+    display: block;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../images/profile-detail/icon-close.png");
+}
+.movies-list h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #262626;
+    margin-bottom: 15px;
+}
+.movies-list p {
+    font-size: 15px;
+    line-height: 155.56%;
+    color: #262626;
+}
+.movies-list .group {
+    color: #00a4d4;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 26px;
+}
+.movies-list .group a {
+    color: #00a4d4;
+}
+.movies-list .group b {
+    font-weight: normal;
+}
+.movies-list .group span {
+    margin-right: 20px;
+}
+.movies-list .group span a.red {
+    color: #ff5252;
+}
+.library-detail p {
+    text-align: center;
+}
+.library-detail .comment {
+    margin-top: 30px;
+    text-align: center;
+}
+.library-list h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 155.56%;
+    color: #000000;
+}
+.library-list .search-container {
+    width: 250px;
+    padding-top: 0;
+}
+.library-list .search-icon {
+    top: 12px;
+    right: 34px;
+    margin-right: -10px;
+}
+.library-list .group {
+    display: flex;
+}
+.library-list .btn-blue {
+    padding: 12px;
+    display: block;
+    margin-left: 10px;
+}
+.library-list .content {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+.library-list .content h4 {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 137.8%;
+    color: #262626;
+}
+.library-list .content p {
+    font-size: 13px;
+    line-height: 158.8%;
+    color: #808080;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.library-list .top {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.library-list .top .group a {
+    color: #808080;
+}
+.library-list .top .group b {
+    font-weight: normal;
+}
+.library-list .top .group span {
+    margin-left: 16px;
+}
+
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
@@ -1560,5 +1711,35 @@ input#search-bar:focus:-ms-placeholder {
         border-radius: 4px;
         padding: 10px;
     }
-
+    .group-popup {
+        display: block;
+    }
+    .group-popup .mx-10 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .group-popup select {
+        max-width: 100%;
+    }
+    .library-list .group {
+        display: inline-block;
+        width: 100%;
+    }
+    .library-list .search-container {
+        width: 100%;
+    }
+    .library-list .search-icon {
+        top: -32px;
+        right: 15px;
+        margin-right: 0;
+    }
+    .library-list .btn-blue {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .content .group {
+        width: auto;
+    }
 }
