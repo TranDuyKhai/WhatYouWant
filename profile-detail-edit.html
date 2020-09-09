@@ -23,7 +23,7 @@
 
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<title>Profile-detail</title>
+	<title>Profile-detail-edit</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -102,16 +102,41 @@
 <main>
 	<section class="mv-news">
 		<figure><img src="images/profile-detail/img-profile-banner.png" alt=""></figure>
+		<div class="icon-edit">
+			<a href=""><img src="images/profile-detail/icon-edit.png" alt=""> </a>
+		</div>
 	</section>
 	<!-- Content -->
 	<section class="container actor-detail">
 		<div class="col-xs-12 col-md-5 col-lg-3 img-avatar">
-			<img src="images/profile-detail/img-avatar.png" alt="">
+			<figure><img src="images/profile-detail/img-avatar.png" alt=""></figure>
+			<div class="avatar-edit">
+				<a href=""><img src="images/profile-detail/icon-edit.png" alt=""> </a>
+			</div>
 		</div>
 		<div class="col-xs-12 col-md-7 col-lg-9 pl30">
-			<h1>John Williams</h1>
-			<p class="edit-profile"><i class="far fa-edit"></i>
-				 Cập nhật trang cá nhân</p>
+			<div class="editText"><input type="text" placeholder="John Williams"></div>
+			<div class="pt15 d-flex">
+				<div class="select">
+					<select class="frm-option">
+						<option>Độ tuổi</option>
+						<option>2</option>
+					</select>
+				</div>
+				<div class="d-flex group-radio">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" id="01" type="radio" name="inlineRadioOptions" value="option1">
+						<label for="01" class="form-check-label">Nam</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" id="02" type="radio" name="inlineRadioOptions" value="option2">
+						<label for="02" class="form-check-label">Nữ</label>
+					</div>
+				</div>
+			</div>
+			<div class="pt30">
+				<a class="btn-save">Lưu</a>
+			</div>
 		</div>
 	</section>
 	<section class="container profile-page mt34">

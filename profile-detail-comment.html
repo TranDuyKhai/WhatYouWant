@@ -20,10 +20,11 @@
 	<link href="assets/plugins/slick/slick.css" rel="stylesheet">
 	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
 	<link href="assets/plugins/odometer/odometer-theme-default.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/jquery.modal.min.css" />
 
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<title>Profile-detail</title>
+	<title>Profile-detail\comment</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -118,10 +119,27 @@
 		<div class="col-md-12 pc">
 			<div class="tabs">
 				<ul>
-					<li><a class="active" href="">Tổng quan</a></li>
+					<li><a href="">Tổng quan</a></li>
 					<li><a href="">Bạn bè</a></li>
 					<li><a href="">Thống kê dữ liệu</a></li>
-					<li><a href="">Bình luận của bạn</a></li>
+					<li><a class="active" href="">Bình luận của bạn</a></li>
+				</ul>
+				<div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container profile-page pt15">
+		<div class="col-md-12 pc">
+			<div class="tabs-sub">
+				<ul>
+					<li><a class="active" href="">Tất cả</a></li>
+					<li><a href="">Movies</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Like</a></li>
+					<li><a href="">Dislike</a></li>
+					<li><a href="">Library</a></li>
 				</ul>
 				<div>
 					<hr>
@@ -134,92 +152,74 @@
 			<a class="btn btnWhite" href="#">Thống kê dữ liệu</a>
 			<a class="btn btnWhite" href="#">Bình luận của bạn</a>
 		</div>
-	</section>
-
-	<section class="container profile-page mt34">
-		<div class="col-md-6 col-lg-3">
-			<div class="card bg-c-pink">
-				<div class="card-body">
-					<span>28</span>
-					<div>
-						<div class="title"><i class="fas fa-heart"></i> <span>Muốn xem </span></div>
-						<div class="group">
-							<span><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> <b>12</b></a></span>
-							<span><a href=""><i class="fa fa-commenting-o" aria-hidden="true"></i> <b>5</b></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 col-lg-3">
-			<div class="card bg-c-orange">
-				<div class="card-body">
-					<span>15</span>
-					<div>
-						<div class="title mt-15"><i class="fas fa-thumbs-down"></i> <span>Không muốn xem</span></div>
-						<div class="group">
-							<span><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> <b>12</b></a></span>
-							<span><a href=""><i class="fa fa-commenting-o" aria-hidden="true"></i> <b>5</b></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 col-lg-3">
-			<div class="card bg-c-blue">
-				<div class="card-body">
-					<span>38</span>
-					<div>
-						<div class="title"><i class="fas fa-heart"></i> <span>Muốn xem </span></div>
-						<div class="group">
-							<span><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> <b>12</b></a></span>
-							<span><a href=""><i class="fa fa-commenting-o" aria-hidden="true"></i> <b>5</b></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 col-lg-3">
-			<div class="card bg-c-violet">
-				<div class="card-body">
-					<span>28</span>
-					<div>
-						<div class="title"><i class="fas fa-heart"></i> <span>Muốn xem </span></div>
-						<div class="group">
-							<span><a href=""><i class="fa fa-thumbs-up" aria-hidden="true"></i> <b>12</b></a></span>
-							<span><a href=""><i class="fa fa-commenting-o" aria-hidden="true"></i> <b>5</b></a></span>
-						</div>
-					</div>
-				</div>
+		<div class="col-sm-12 sp">
+			<div class="form-group">
+				<select class="form-control">
+					<option>Tất cả bình luận</option>
+					<option>Movies</option>
+					<option>News</option>
+					<option>Like</option>
+					<option>Dislike</option>
+					<option>Library</option>
+				</select>
 			</div>
 		</div>
 	</section>
-	<section class="container profile-page pt30">
-		<div class="col-md-6">
-			<h4>Nhóm yêu thích</h4>
+	<section class="container profile-comment pt15 pb45">
+		<div class="col-md-12">
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào bài viết <a href=""> “Có thực phim Marvel không phải là điện ảnh”</a> </p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
+			<div class="block-comment">
+				<p>Bạn đã bình luận vào phim <a href="">“La la land” </a> Tôi thấy phim này rất thực tế và hay</p>
+				<small>2 ngày trước</small>
+				<hr>
+			</div>
 		</div>
-		<div class="col-md-6 text-right">
-			<a class="btn-blue">Tạo nhóm</a>
-		</div>
-	</section>
-	<section class="container profile-page pt30 pb45">
-		<div class="col-md-6 col-lg-4">
-			<figure>
-				<img src="images/profile-detail/img-favorite.png" alt="">
-			</figure>
-			<div class="title-text"><a href="">Nhóm yêu thích của tôi</a></div>
-		</div>
-		<div class="col-md-6 col-lg-4">
-			<figure>
-				<img src="images/profile-detail/img-favorite.png" alt="">
-			</figure>
-			<div class="title-text"><a href="">Phim đoạt giải Oscars</a></div>
-		</div>
-		<div class="col-md-6 col-lg-4">
-			<figure>
-				<img src="images/profile-detail/img-favorite.png" alt="">
-			</figure>
-			<div class="title-text"><a href="">Phim xem cuối tuần</a></div>
+		<div class="col-md-12 text-center mt25">
+			<a class="btn btnWhite" href="">Tải thêm</a>
 		</div>
 	</section>
 
@@ -276,7 +276,6 @@
 		</div>
 	</div>
 </footer>
-	
 
 	<script src="assets/js/jquery-2.2.4.min.js"></script>
 	<script src="assets/js/fontawesome.min.js"></script>
@@ -284,6 +283,7 @@
 	<script src="assets/plugins/odometer/odometer.min.js"></script>
 	<script src="js/general.js"></script>
 	<script src="js/slideshows.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 </body>
 
