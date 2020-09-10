@@ -23,6 +23,8 @@
 
 	<link href="css/common.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/analytics.css" rel="stylesheet">
+
 	<title>Profile-detail</title>
 
 	<!-- Google font -->
@@ -161,7 +163,62 @@
 						<h3>Rating phổ biến</h3>
 					</div>
 					<div class="data-statistic__chart__child--graph">
-						
+						<canvas id="rating-chart" width="800" height="450" class="rating-chart" data-value="7, 13, 21, 28, 33, 35"></canvas>
+						<div>
+							<div class="rating rating--five">
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="rating rating--five">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="rating rating--five">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="rating rating--five">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="rating rating--five">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="data-statistic__chart__child">
+					<div class="data-statistic__chart__child--title">
+						<h3>Quốc gia yêu thích</h3>
+					</div>
+					<div class="data-statistic__chart__child--graph">
+						<div class="data-statistic__chart__child--graph__param param">
+							<div class="param__comment">
+								<div class="param__comment__child">
+									<span></span><span>Anh-Mỹ</span>
+								</div>
+								<div class="param__comment__child">
+									<span></span><span>Nhật</span>
+								</div>
+								<div class="param__comment__child">
+									<span></span><span>Trung Quốc</span>
+								</div>
+								<div class="param__comment__child">
+									<span></span><span>Thái Lan</span>
+								</div>
+								<div class="param__comment__child">
+									<span></span><span>Pháp</span>
+								</div>
+							</div>
+							<div class="param__detail"></div>
+						</div>
+						<canvas id="country-chart" width="500" height="500" class="country-chart" data-value="30, 30, 20, 15, 5"></canvas>
 					</div>
 				</div>
 			</div>
@@ -227,7 +284,9 @@
 	<script src="assets/js/fontawesome.min.js"></script>
 	<script src="assets/plugins/slick/slick.min.js"></script>
 	<script src="assets/plugins/odometer/odometer.min.js"></script>
+	<script src="assets/plugins/chartjs/chart.min.js"></script>
 	<script src="js/general.js"></script>
+	<script src="js/main.js"></script>
 	<script src="js/slideshows.js"></script>
 
 </body>

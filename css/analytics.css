@@ -1,0 +1,12 @@
+.data-statistic {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+  .data-statistic__menu {
+    max-width: calc((100% - 70px)/ 3);
+    width: 100%; }
+  .data-statistic__chart {
+    max-width: calc((100% - 70px)/ 3 * 2);
+    width: 100%; }
+
+/*# sourceMappingURL=analytics.css.map */

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "functions.scss";
+
+.data-statistic{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	&__menu{
+		max-width: calc((100% - 70px)/ 3);
+		width: 100%;
+	}
+	&__chart{
+		max-width: calc((100% - 70px)/ 3 * 2);
+		width: 100%;
+	}
+}

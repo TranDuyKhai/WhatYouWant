@@ -632,8 +632,15 @@
 	<script src="js/general.js"></script>
 	<script src="js/slideshows.js"></script>
 	<script src="js/jquery-modal-video.min.js"></script>
-	<script src="js/main.js"></script>
 
+	<script type="text/javascript">
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true
+			}
+		});
+	</script>
 </body>
 
 </html>
