@@ -8,27 +8,37 @@
   .data-statistic__chart {
     max-width: calc((100% - 70px)/ 3 * 2);
     width: 100%; }
-    .data-statistic__chart__child--title {
-      position: relative;
-      z-index: 0;
-      width: 100%;
-      margin-bottom: 20px; }
-      .data-statistic__chart__child--title::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
+    .data-statistic__chart__child {
+      margin-bottom: 70px; }
+      .data-statistic__chart__child--title {
+        position: relative;
+        z-index: 0;
         width: 100%;
-        height: 1px;
-        background-color: #ccc;
-        z-index: -1; }
-      .data-statistic__chart__child--title h3 {
-        background-color: #FFCA52;
-        border-radius: 20px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        width: max-content;
-        display: table;
-        padding: 10px 20px; }
+        margin-bottom: 20px; }
+        .data-statistic__chart__child--title::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #ccc;
+          z-index: -1; }
+        .data-statistic__chart__child--title h3 {
+          background-color: #FFCA52;
+          border-radius: 20px;
+          font-size: 1.5rem;
+          font-weight: bold;
+          width: max-content;
+          display: table;
+          padding: 10px 20px; }
+      .data-statistic__chart__child--graph--two-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      .data-statistic__chart__child--graph__param {
+        width: 50%; }
+      .data-statistic__chart__child--graph__doughnut {
+        width: 50%; }
 
 /*# sourceMappingURL=analytics.css.map */

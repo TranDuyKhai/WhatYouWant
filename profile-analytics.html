@@ -163,7 +163,7 @@
 						<h3>Rating phổ biến</h3>
 					</div>
 					<div class="data-statistic__chart__child--graph">
-						<canvas id="rating-chart" width="800" height="450" class="rating-chart" data-value="7, 13, 21, 28, 33, 35"></canvas>
+						<canvas id="rating-chart" width="800" height="450" class="rating-chart" data-value="7, 13, 21, 28, 33" data-max="35"></canvas>
 						<div>
 							<div class="rating rating--five">
 								<i class="fas fa-star"></i>
@@ -197,7 +197,7 @@
 					<div class="data-statistic__chart__child--title">
 						<h3>Quốc gia yêu thích</h3>
 					</div>
-					<div class="data-statistic__chart__child--graph">
+					<div class="data-statistic__chart__child--graph data-statistic__chart__child--graph--two-block">
 						<div class="data-statistic__chart__child--graph__param param">
 							<div class="param__comment">
 								<div class="param__comment__child">
@@ -243,7 +243,67 @@
 								</div>
 							</div>
 						</div>
-						<canvas id="country-chart" width="500" height="500" class="country-chart" data-value="30, 30, 20, 15, 5"></canvas>
+						<div class="data-statistic__chart__child--graph__doughnut">
+							<canvas id="country-chart" width="500" height="500" class="country-chart" data-value="30, 30, 20, 15, 5"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="data-statistic__chart__child">
+					<div class="data-statistic__chart__child--title">
+						<h3>Thể loại yêu thích</h3>
+					</div>
+					<div class="data-statistic__chart__child--graph data-statistic__chart__child--graph--two-block">
+						<div class="data-statistic__chart__child--graph__param param">
+							<div class="param__detail">
+								<div class="param__detail__row param__detail__row--header">
+									<p>Thể Loại</p>
+									<p>Số lượng</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Phiêu lưu</p>
+									<p>20</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Hoạt hình</p>
+									<p>12</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Kinh dị</p>
+									<p>34</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Giật gân</p>
+									<p>12</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Hành động</p>
+									<p>32</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Viễn tưởng</p>
+									<p>45</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Lãng mạn</p>
+									<p>23</p>
+								</div>
+								<div class="param__detail__row">
+									<p>Gia đình</p>
+									<p>24</p>
+								</div>
+							</div>
+						</div>
+						<div class="data-statistic__chart__child--graph__doughnut">
+							<canvas id="country-chart" width="500" height="500" class="country-chart" data-value="30, 30, 20, 15, 5"></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="data-statistic__chart__child">
+					<div class="data-statistic__chart__child--title">
+						<h3>Phân phối rating</h3>
+					</div>
+					<div class="data-statistic__chart__child--graph">
+						<canvas id="distribution-chart" width="800" height="450" class="distribution-chart" data-value="11, 4, 9, 0.5, 17, 7, 13, 10, 5, 2, 12, 6" data-max="18" data-label="Tháng 1 2019, Tháng 2 2019, Tháng 3 2019, Tháng 4 2019, Tháng 5 2019, Tháng 6 2019, Tháng 7 2019, Tháng 8 2019, Tháng 9 2019, Tháng 10 2019, Tháng 11 2019, Tháng 12 2019"></canvas>
 					</div>
 				</div>
 			</div>

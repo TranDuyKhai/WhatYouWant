@@ -1,7 +1,8 @@
 $(function(){
 
 	var ctx = document.getElementById('rating-chart').getContext('2d');
-	var data = JSON.parse("[" + $('.rating-chart').data('value') + "]");
+	var data = JSON.parse("[" + $('.rating-chart').data('value') +','+ $('.rating-chart').data('max') + "]");
+
 	var myChart = new Chart(ctx, {
 		type: 'bar',
 		data: {
@@ -22,6 +23,11 @@ $(function(){
 				yAxes: [{
 					ticks: {
 						beginAtZero: true
+					}
+				}],
+				xAxes: [{
+					ticks: {
+						display: false
 					}
 				}]
 			}
@@ -49,13 +55,45 @@ $(function(){
 			tooltips: {
 				enabled: false,
 			},
+		},
+	});
+
+	var distribution = document.getElementById('distribution-chart').getContext('2d');
+	var data_distribution = JSON.parse("[" + $('.distribution-chart').data('value') +','+ $('.distribution-chart').data('max') + "]"),
+		data_label = $('.distribution-chart').data('label').split(',');
+
+
+	var distribution_chart = new Chart(distribution, {
+		type: 'line',
+		data: {
+			labels: data_label,
+			datasets: [{
+				label: "Unavailable",
+				fill: true,
+				backgroundColor: '#00A4D4',
+				pointBackgroundColor: '#FFFFFF',
+				borderColor: '#00A4D4',
+				pointHighlightStroke: '#FFFFFF',
+				borderCapStyle: 'butt',
+				data: data_distribution,
+
+			}]
+		},
+		options: {
+			responsive: false,
 			scales: {
 				yAxes: [{
+					stacked: true,
+				}],
+				xAxes: [{
 					ticks: {
-						beginAtZero: true
+						display: false
 					}
 				}]
-			}
-		},
+			},
+			animation: {
+				duration: 750,
+			},
+		}
 	});
 });
