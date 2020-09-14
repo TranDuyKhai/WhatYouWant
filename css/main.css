@@ -1492,7 +1492,7 @@ input#search-bar:focus:-ms-placeholder {
 .library-list .content {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 }
 .library-list .content h4 {
     font-weight: bold;
