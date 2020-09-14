@@ -13,7 +13,6 @@ a {
 }
 p {
     font-size: 15px;
-    color: #262626
 }
 .form-control {
     border: 1px solid #ccc;
@@ -753,30 +752,7 @@ a.btn-download {
 .align-bottom {
     vertical-align: bottom;
 }
-ul.pagination {
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-}
-ul.pagination li {
-    display: inline-flex;
-    list-style: none;
-    text-align: center;
-}
-ul.pagination li a {
-    display: inline;
-    list-style: none;
-    background: #a6a6a6;
-    font-size: 13px;
-    color: #fff;
-    border-radius: 4px;
-    width: 40px;
-    line-height: 40px;
-}
-ul.pagination li a.active {
-    background: #00a4d4;
-    border-radius: 4px;
-}
+
 .box-editor {
     border: 1px solid #e6e6e6;
     box-sizing: border-box;

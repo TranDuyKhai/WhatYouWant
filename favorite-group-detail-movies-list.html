@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="icon" type="image/png" href="images/common/icon_favicon.png">
+	<!-- style -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-adjust.min.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
+	<link href="assets/plugins/odometer/odometer-theme-default.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/jquery.modal.min.css" />
+
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<title>Favorite-group-detail\Movies-list</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+	<h1 class="header__logo">
+		<img src="images/common/icon_favicon.png" alt="what you want">
+		<a href="index.html"></a>
+	</h1>
+	<div class="header__navbar">
+		<form action="index.html" method="post" class="search_form">
+			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,...">
+			<button type="submit"><i class="fas fa-search"></i></button>
+		</form>
+		<button class="header__navbar__btnSearch"><i class="fas fa-search"></i></button>
+		<div class="header__navbar__menu">
+			<ul>
+				<li><a href="#">MỚI NHẤT</a></li>
+				<li><a href="#">PHỔ BIẾN</a></li>
+				<li><a href="#">XEM PHIM</a></li>
+				<li><a href="#">TIN TỨC</a></li>
+				<li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+			</ul>
+		</div>
+		<div class="header__navbar__user login">
+			<div class="header__navbar__user--login">
+				<figure><img src="images/common/img_user.jpg" alt=""></figure>
+				<p>John Williams &nbsp;<i class="fas fa-chevron-down"></i></p>
+				<a href="#" class="user__noti"><i class="far fa-bell"></i></a>
+			</div>
+			<div class="header__navbar__user--register">
+				<a href="user/login.html">ĐĂNG NHẬP</a>
+				<a href="user/register.html">TẠO TÀI KHOẢN</a>
+			</div>
+		</div>
+		<div class="header__navbar__notification">
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+			<div class="header__navbar__notification--noti notification">
+				<p><span class="notification__user">Dunght</span> trả lời <span class="notification__action">comment</span> của bạn</p>
+				<p class="notification__timeline">10 trước</p>
+			</div>
+		</div>
+		<div class="header__navbar__hamburger">
+			<span class="dots dots--one"></span>
+			<span class="dots dots--two"></span>
+			<span class="dots dots--three"></span>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="mv-news">
+		<figure><img src="images/libraries/img-banner-list.png" alt=""></figure>
+	</section>
+	<!-- Content -->
+	<section class="container movies-list">
+		<div class="col-md-9">
+			<h1>Nhóm yêu thích của tôi</h1>
+			<div class="group">
+				<span><a href=""><i class="far fa-edit"></i> <b>Chỉnh sửa</b></a></span>
+				<span><a class="red" href=""><i class="fas fa-trash-alt"></i> <b>Xóa</b></a></span>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="people-card">
+				<a href="">
+					<img class="avatar-sm" src="images/libraries/img-lib-avatar.png" alt="">
+					<h4>John Williams</h4>
+					<h5>01/11/2019</h5>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="container profile-page mt34">
+		<div class="col-md-12 pc">
+			<div class="tabs">
+				<ul>
+					<li><a class="active" href="">Danh sách phim</a></li>
+					<li><a href="">Bình luận</a></li>
+				</ul>
+				<div>
+					<hr>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 sp text-center">
+			<a class="btn btnBlue" href="#">Danh sách phim</a>
+			<a class="btn btnWhite" href="#">Bình luận</a>
+		</div>
+	</section>
+
+	<section class="container category-detail pt20">
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film01.png" alt=""></figure>
+				<h4>Interstellar</h4>
+				<p>2014</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film02.png" alt=""></figure>
+				<h4>The Theory of Everything</h4>
+				<p>2014</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film03.png" alt=""></figure>
+				<h4>Les Misérables</h4>
+				<p>2012</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film04.png" alt=""></figure>
+				<h4>Les Misérables</h4>
+				<p>2014</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film05.png" alt=""></figure>
+				<h4>The Imitation Game</h4>
+				<p>2014</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film06.png" alt=""></figure>
+				<h4>Coco</h4>
+				<p>2017</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film01.png" alt=""></figure>
+				<h4>Interstellar</h4>
+				<p>2014</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film02.png" alt=""></figure>
+				<h4>The Theory of Everything</h4>
+				<p>2014</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+			<a href="">
+				<figure><img class="img-item" src="images/home/img_film03.png" alt=""></figure>
+				<h4>Les Misérables</h4>
+				<p>2012</p>
+				<div class="rating rating--five">
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+					<i class="fas fa-star" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+	</section>
+
+
+
+
+</main>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__menu">
+			<div class="footer__inApp">
+				<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
+				<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			</div>
+			<div class="footer__menu__child footer__menu__child--address">
+				<h2>WHAT YOU WANT</h2>
+				<ul>
+					<li><a href="#">Email: info@whatyouwant.co</a></li>
+					<li><a href="#">Phone: +84901467773</a></li>
+					<li><a href="#">Address: 20A Trần Kế Xương, P.7, Q.Phú Nhuận, TPHCM</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--account">
+				<h2>TÀI KHOẢN</h2>
+				<ul>
+					<li><a href="#">Đăng ký</a></li>
+					<li><a href="#">Đăng nhập</a></li>
+					<li><a href="#">Khôi phục tài khoản</a></li>
+					<li><a href="#">Báo cáo sự cố</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--faq">
+				<h2>PHẢN HỒI</h2>
+				<ul>
+					<li><a href="#">Chính sách bảo mật</a></li>
+					<li><a href="#">Phản hồi</a></li>
+					<li><a href="#">Đánh giá chúng tôi</a></li>
+					<li><a href="#">Đăng ký nhận thông báo</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu__child footer__menu__child--social">
+				<h2>SOCIAL MEDIA</h2>
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__info">
+			<p>Copyright © 2019 What You Want Co., Ltd. All Rights Reserved. Powered by Letweb</p>
+			<div class="footer__inApp">
+				<a href=""><img src="images/common/img_btn-googleplay.png" alt=""></a>
+				<a href=""><img src="images/common/img_btn-appstore.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/fontawesome.min.js"></script>
+	<script src="assets/plugins/slick/slick.min.js"></script>
+	<script src="assets/plugins/odometer/odometer.min.js"></script>
+	<script src="js/general.js"></script>
+	<script src="js/slideshows.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+</body>
+
+</html>
