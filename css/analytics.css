@@ -1,10 +1,37 @@
 .data-statistic {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-top: 30px; }
   .data-statistic__menu {
     max-width: calc((100% - 70px)/ 3);
     width: 100%; }
+    .data-statistic__menu__child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FAFAFA;
+      margin-bottom: 1px; }
+      .data-statistic__menu__child figure {
+        max-width: calc((100% - 30px)/3);
+        width: 100%;
+        height: 78px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #fff; }
+        .data-statistic__menu__child figure img {
+          width: auto; }
+      .data-statistic__menu__child p {
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #262626;
+        text-align: center;
+        width: 100%; }
+      .data-statistic__menu__child.active {
+        background-color: #F0F0F0; }
+        .data-statistic__menu__child.active p {
+          font-weight: 600; }
   .data-statistic__chart {
     max-width: calc((100% - 70px)/ 3 * 2);
     width: 100%; }
@@ -36,9 +63,148 @@
         display: flex;
         justify-content: space-between;
         align-items: center; }
-      .data-statistic__chart__child--graph__param {
+      .data-statistic__chart__child--graph .label-for-chart {
+        position: relative;
+        z-index: 0;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto; }
+        .data-statistic__chart__child--graph .label-for-chart .rating {
+          min-width: 104px;
+          display: flex;
+          justify-content: center; }
+          .data-statistic__chart__child--graph .label-for-chart .rating--one {
+            transform: translateX(30%); }
+          .data-statistic__chart__child--graph .label-for-chart .rating--two {
+            transform: translateX(23%); }
+          .data-statistic__chart__child--graph .label-for-chart .rating--three {
+            transform: translateX(18%); }
+          .data-statistic__chart__child--graph .label-for-chart .rating--four {
+            transform: translateX(12%); }
+      .data-statistic__chart__child--graph .param {
         width: 50%; }
+        .data-statistic__chart__child--graph .param__comment {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-flow: row wrap; }
+          .data-statistic__chart__child--graph .param__comment__child {
+            width: calc(50% - 10px);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center; }
+            .data-statistic__chart__child--graph .param__comment__child .block-color {
+              width: 20px;
+              height: 20px;
+              display: inline-block;
+              border-radius: 3px;
+              margin-right: 10px; }
+              .data-statistic__chart__child--graph .param__comment__child .block-color--red {
+                background-color: #FF5252; }
+              .data-statistic__chart__child--graph .param__comment__child .block-color--purple {
+                background-color: #8952FF; }
+              .data-statistic__chart__child--graph .param__comment__child .block-color--yellow {
+                background-color: #FFCA52; }
+              .data-statistic__chart__child--graph .param__comment__child .block-color--grey {
+                background-color: #C4C4C4; }
+              .data-statistic__chart__child--graph .param__comment__child .block-color--blue {
+                background-color: #00A4D4; }
+        .data-statistic__chart__child--graph .param__detail {
+          padding-right: 70px; }
+          .data-statistic__chart__child--graph .param__detail__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px; }
+            .data-statistic__chart__child--graph .param__detail__row--header {
+              border-bottom: 2px solid #ccc;
+              padding-bottom: 15px; }
+              .data-statistic__chart__child--graph .param__detail__row--header p {
+                color: #00A4D4;
+                font-size: 1.7rem;
+                font-weight: bold; }
       .data-statistic__chart__child--graph__doughnut {
         width: 50%; }
+      .data-statistic__chart__child--graph .doughnut-chart {
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        						/*.doughnut__info{
+        							position: absolute;
+        							z-index: 1;
+        							top: 0;
+        							left: 0;
+        							width: 100%;
+        							&__tag{
+        								position: absolute;
+        								z-index: 0;
+        								background-color: #fff;
+        								border-radius: 20px;
+        								width: 50px;
+        								text-align: center;
+        								padding: 5px 0;
+        								p{
+        									color: #262626;
+        									font-weight: bold;
+        									font-size: 1rem;
+        								}
+        								&--value-one{
+        
+        								}
+        								&--value-two{
+        
+        								}
+        								&--value-three{
+        
+        								}
+        								&--value-four{
+        
+        								}
+        								&--value-five{
+        
+        								}
+        
+        							}
+        							}*/ }
+  .data-statistic #distribution-chart--mobo {
+    display: none; }
+  @media screen and (max-width: 767px) {
+    .data-statistic {
+      padding: 0 10px; }
+      .data-statistic__menu {
+        display: none; }
+      .data-statistic__chart {
+        max-width: 100%; }
+        .data-statistic__chart__child--graph {
+          width: 100%; }
+          .data-statistic__chart__child--graph .label-for-chart {
+            width: 97%; }
+            .data-statistic__chart__child--graph .label-for-chart .rating {
+              min-width: 56px; }
+              .data-statistic__chart__child--graph .label-for-chart .rating i {
+                font-size: 1rem;
+                margin-right: 0; }
+              .data-statistic__chart__child--graph .label-for-chart .rating--one {
+                transform: translateX(50%); }
+              .data-statistic__chart__child--graph .label-for-chart .rating--two {
+                transform: translateX(38%); }
+              .data-statistic__chart__child--graph .label-for-chart .rating--three {
+                transform: translateX(25%); }
+              .data-statistic__chart__child--graph .label-for-chart .rating--four {
+                transform: translateX(14%); }
+          .data-statistic__chart__child--graph--two-block {
+            flex-flow: column nowrap; }
+            .data-statistic__chart__child--graph--two-block .data-statistic__chart__child--graph__doughnut {
+              width: 100%; }
+            .data-statistic__chart__child--graph--two-block .param {
+              width: 100%; }
+              .data-statistic__chart__child--graph--two-block .param__detail {
+                padding-right: 0; }
+      .data-statistic #distribution-chart--desktop {
+        display: none; }
+      .data-statistic #distribution-chart--mobo {
+        display: block; } }
 
 /*# sourceMappingURL=analytics.css.map */

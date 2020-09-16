@@ -164,20 +164,20 @@
 					</div>
 					<div class="data-statistic__chart__child--graph">
 						<canvas id="rating-chart" width="800" height="450" class="rating-chart" data-value="7, 13, 21, 28, 33" data-max="35"></canvas>
-						<div>
-							<div class="rating rating--five">
+						<div class="label-for-chart">
+							<div class="rating rating--one">
 								<i class="fas fa-star"></i>
 							</div>
-							<div class="rating rating--five">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-							</div>
-							<div class="rating rating--five">
-								<i class="fas fa-star"></i>
+							<div class="rating rating--two">
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 							</div>
-							<div class="rating rating--five">
+							<div class="rating rating--three">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<div class="rating rating--four">
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -201,19 +201,19 @@
 						<div class="data-statistic__chart__child--graph__param param">
 							<div class="param__comment">
 								<div class="param__comment__child">
-									<span></span><span>Anh-Mỹ</span>
+									<span class="block-color block-color--red"></span><span>Anh-Mỹ</span>
 								</div>
 								<div class="param__comment__child">
-									<span></span><span>Nhật</span>
+									<span class="block-color block-color--purple"></span><span>Nhật</span>
 								</div>
 								<div class="param__comment__child">
-									<span></span><span>Trung Quốc</span>
+									<span class="block-color block-color--yellow"></span><span>Trung Quốc</span>
 								</div>
 								<div class="param__comment__child">
-									<span></span><span>Thái Lan</span>
+									<span class="block-color block-color--grey"></span><span>Thái Lan</span>
 								</div>
 								<div class="param__comment__child">
-									<span></span><span>Pháp</span>
+									<span class="block-color block-color--blue"></span><span>Pháp</span>
 								</div>
 							</div>
 							<div class="param__detail">
@@ -243,8 +243,25 @@
 								</div>
 							</div>
 						</div>
-						<div class="data-statistic__chart__child--graph__doughnut">
-							<canvas id="country-chart" width="500" height="500" class="country-chart" data-value="30, 30, 20, 15, 5"></canvas>
+						<div class="data-statistic__chart__child--graph__doughnut doughtnut-chart">
+							
+							<div class="doughtnut-chart__info">
+								<div class="doughtnut-chart__info__tag doughtnut-chart__info__tag--value-one">
+									<p>30%</p>
+								</div>
+								<div class="doughtnut-chart__info__tag doughtnut-chart__info__tag--value-two">
+									<p>30%</p>
+								</div>
+								<div class="doughtnut-chart__info__tag doughtnut-chart__info__tag--value-three">
+									<p>20%</p>
+								</div>
+								<div class="doughtnut-chart__info__tag doughtnut-chart__info__tag--value-four">
+									<p>15%</p>
+								</div>
+								<div class="doughtnut-chart__info__tag doughtnut-chart__info__tag--value-five">
+									<p>5%</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -303,7 +320,8 @@
 						<h3>Phân phối rating</h3>
 					</div>
 					<div class="data-statistic__chart__child--graph">
-						<canvas id="distribution-chart" width="800" height="450" class="distribution-chart" data-value="11, 4, 9, 0.5, 17, 7, 13, 10, 5, 2, 12, 6" data-max="18" data-label="Tháng 1 2019, Tháng 2 2019, Tháng 3 2019, Tháng 4 2019, Tháng 5 2019, Tháng 6 2019, Tháng 7 2019, Tháng 8 2019, Tháng 9 2019, Tháng 10 2019, Tháng 11 2019, Tháng 12 2019"></canvas>
+						<canvas id="distribution-chart--desktop" width="730" height="450" class="distribution-chart distribution-chart--deskop" data-value="11, 4, 9, 0.5, 17, 7, 13, 10, 5, 2, 12, 6" data-max="18" data-label="Tháng 1 2019, Tháng 2 2019, Tháng 3 2019, Tháng 4 2019, Tháng 5 2019, Tháng 6 2019, Tháng 7 2019, Tháng 8 2019, Tháng 9 2019, Tháng 10 2019, Tháng 11 2019, Tháng 12 2019"></canvas>
+						<canvas id="distribution-chart--mobo" width="350" height="450" class="distribution-chart distribution-chart--mobo" data-value="11, 4, 9, 0.5, 17, 7, 13, 10, 5, 2, 12, 6" data-max="18" data-label="Tháng 1 2019, Tháng 2 2019, Tháng 3 2019, Tháng 4 2019, Tháng 5 2019, Tháng 6 2019, Tháng 7 2019, Tháng 8 2019, Tháng 9 2019, Tháng 10 2019, Tháng 11 2019, Tháng 12 2019"></canvas>
 					</div>
 				</div>
 			</div>

@@ -28,7 +28,11 @@ $(function(){
 				xAxes: [{
 					ticks: {
 						display: false
-					}
+					},
+					userCallback: function(item, index) {
+						if (!(index % 4)) return item;
+					},
+					autoSkip: false
 				}]
 			}
 		},
@@ -58,10 +62,13 @@ $(function(){
 		},
 	});
 
-	var distribution = document.getElementById('distribution-chart').getContext('2d');
+	if($(window).width() > 1024){
+		var distribution = document.getElementById('distribution-chart--desktop').getContext('2d');
+	}else{
+		var distribution = document.getElementById('distribution-chart--mobo').getContext('2d');
+	}
 	var data_distribution = JSON.parse("[" + $('.distribution-chart').data('value') +','+ $('.distribution-chart').data('max') + "]"),
 		data_label = $('.distribution-chart').data('label').split(',');
-
 
 	var distribution_chart = new Chart(distribution, {
 		type: 'line',
@@ -81,6 +88,9 @@ $(function(){
 		},
 		options: {
 			responsive: false,
+			legend: {
+				display: false,
+			},
 			scales: {
 				yAxes: [{
 					stacked: true,

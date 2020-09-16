@@ -5,9 +5,42 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-top: 30px;
 	&__menu{
 		max-width: calc((100% - 70px)/ 3);
 		width: 100%;
+		&__child{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #FAFAFA;
+			margin-bottom: 1px;
+			figure{
+				max-width: calc((100% - 30px)/3);
+				width: 100%;
+				height: 78px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-right: 1px solid #fff;
+				img{
+					width: auto;
+				}
+			}
+			p{
+				font-weight: 300;
+				font-size: 1.5rem;
+				color: #262626;
+				text-align: center;
+				width: 100%;
+			}
+			&.active{
+				background-color: #F0F0F0;
+				p{
+					font-weight: 600;
+				}
+			}
+		}
 	}
 	&__chart{
 		max-width: calc((100% - 70px)/ 3 * 2);
@@ -45,13 +78,190 @@
 					justify-content: space-between;
 					align-items: center;
 				}
-				&__param{
-					width: 50%
+				.label-for-chart{
+					position: relative;
+					z-index: 0;
+					width: 95%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin: auto;
+					.rating{
+						min-width: 104px;
+						display: flex;
+						justify-content: center;
+						&--one{
+							transform: translateX(30%);
+						}
+						&--two{
+							transform: translateX(23%);
+						}
+						&--three{
+							transform: translateX(18%);
+						}
+						&--four{
+							transform: translateX(12%);
+						}
+					}
+				}
+				.param{
+					width: 50%;
+					&__comment{
+						display: flex;
+						justify-content:  space-between;
+						align-items: center;
+						flex-flow: row wrap;
+						&__child{
+							width: calc(50% - 10px);
+							margin-bottom: 15px;
+							display: flex;
+							align-items: center;
+							.block-color{
+								width: 20px;
+								height: 20px;
+								display: inline-block;
+								border-radius: 3px;
+								margin-right: 10px;
+								&--red{
+									background-color: #FF5252;
+								}
+								&--purple{
+									background-color: #8952FF;
+								}
+								&--yellow{
+									background-color: #FFCA52;
+								}
+								&--grey{
+									background-color: #C4C4C4;
+								}
+								&--blue{
+									background-color: #00A4D4;
+								}
+							}
+						}
+					}
+					&__detail{
+						padding-right: 70px;
+						&__row{
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							margin-bottom: 30px;
+							&--header{
+								border-bottom: 2px solid #ccc;
+								padding-bottom: 15px;
+								p{
+									color: #00A4D4;
+									font-size: 1.7rem;
+									font-weight: bold;
+								}
+							}
+						}
+					}
 				}
 				&__doughnut{
 					width: 50%;
 				}
+				.doughnut-chart{
+					position: relative;
+					z-index: 0;
+					width: 100%;
+						/*.doughnut__info{
+							position: absolute;
+							z-index: 1;
+							top: 0;
+							left: 0;
+							width: 100%;
+							&__tag{
+								position: absolute;
+								z-index: 0;
+								background-color: #fff;
+								border-radius: 20px;
+								width: 50px;
+								text-align: center;
+								padding: 5px 0;
+								p{
+									color: #262626;
+									font-weight: bold;
+									font-size: 1rem;
+								}
+								&--value-one{
+
+								}
+								&--value-two{
+
+								}
+								&--value-three{
+
+								}
+								&--value-four{
+
+								}
+								&--value-five{
+
+								}
+
+							}
+							}*/
+						}
 			}
+		}
+	}
+	#distribution-chart--mobo{
+		display: none;
+	}
+	@include mobile{
+		padding: 0 10px;
+		&__menu{
+			display: none;
+		}
+		&__chart{
+			max-width: 100%;
+			&__child{
+				&--graph{
+					width: 100%;
+					.label-for-chart{
+						width: 97%;
+						.rating{
+							min-width: 56px;
+							i{
+								font-size: 1rem;
+								margin-right: 0;
+							}
+							&--one{
+								transform: translateX(50%);
+							}
+							&--two{
+								transform: translateX(38%);
+							}
+							&--three{
+								transform: translateX(25%);
+							}
+							&--four{
+								transform: translateX(14%);
+							}
+						}
+					}
+					&--two-block{
+						flex-flow: column nowrap;
+						.data-statistic__chart__child--graph__doughnut{
+							width: 100%;
+						}
+						.param{
+							width: 100%;
+							&__detail{
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		#distribution-chart--desktop{
+			display: none;
+		}
+		#distribution-chart--mobo{
+			display: block;
 		}
 	}
 }
