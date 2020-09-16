@@ -5,6 +5,28 @@ body {
 [data-collapse] {
     display:none
 }
+.input-group .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 9px;
+}
+.input-group  {
+    display: flex;
+    margin-top: 10px;
+}
+.btn-outline-secondary {
+    background-color: #00a4d4;
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #00a4d4;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 12px 10px;
+}
 .footer {
     margin-top: 20px;
 }
@@ -18,7 +40,7 @@ p {
     font-size: 15px;
 }
 .read-more {
-    margin-left: 56px;
+    margin-left: 7%;
 }
 .form-control {
     border: 1px solid #ccc;
@@ -973,6 +995,7 @@ a.btn-download {
 }
 .people-card {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .people-card img {
     float: left;
@@ -1512,6 +1535,9 @@ input#search-bar:focus:-ms-placeholder {
     }
 }
 @media screen and (max-width: 768px) {
+    .w200 {
+        line-height: 20px;
+    }
     .edit-profile {
         text-align: center;
     }
