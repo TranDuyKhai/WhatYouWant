@@ -132,10 +132,11 @@
         z-index: 0; }
         .data-statistic__chart__child--graph .doughnut .doughnut__info {
           position: absolute;
-          z-index: 1;
           top: 0;
+          right: 0;
+          bottom: 0;
           left: 0;
-          width: 100%; }
+          z-index: 1; }
           .data-statistic__chart__child--graph .doughnut .doughnut__info__tag {
             position: absolute;
             z-index: 0;
@@ -148,6 +149,54 @@
               color: #262626;
               font-weight: bold;
               font-size: 1rem; }
+            .data-statistic__chart__child--graph .doughnut .doughnut__info__tag--value-one {
+              top: 25%;
+              left: 70%;
+              transform: translateY(100%); }
+            .data-statistic__chart__child--graph .doughnut .doughnut__info__tag--value-two {
+              bottom: 20%;
+              right: 50%;
+              transform: translateX(100%); }
+            .data-statistic__chart__child--graph .doughnut .doughnut__info__tag--value-three {
+              bottom: 40%;
+              left: 15%; }
+            .data-statistic__chart__child--graph .doughnut .doughnut__info__tag--value-four {
+              top: 25%;
+              left: 20%; }
+            .data-statistic__chart__child--graph .doughnut .doughnut__info__tag--value-five {
+              top: 10%;
+              left: 50%;
+              transform: translateX(-100%); }
+      .data-statistic__chart__child--graph .bubble-chart {
+        width: 100%;
+        height: 100%; }
+        .data-statistic__chart__child--graph .bubble-chart__child {
+          min-height: 100px;
+          width: 100%;
+          display: flex;
+          justify-content: space-between; }
+          .data-statistic__chart__child--graph .bubble-chart__child__text {
+            color: #00A4D4; }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b1t1 {
+              transform: translate(50px, 50px); }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b1t2 {
+              display: flex;
+              align-items: flex-end;
+              transform: translateY(-50px); }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b1t3 {
+              transform: translate(-70px, 20px); }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b2t2 {
+              display: flex;
+              align-items: center; }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b3t1 {
+              display: flex;
+              align-items: center;
+              transform: translateX(70px); }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b3t2 {
+              display: flex;
+              align-items: flex-end; }
+            .data-statistic__chart__child--graph .bubble-chart__child__text#b3t3 {
+              transform: translate(-50px, 50px); }
   .data-statistic #distribution-chart--mobo {
     display: none; }
   @media screen and (max-width: 767px) {

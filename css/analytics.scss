@@ -166,11 +166,8 @@
 					position: relative;
 					z-index: 0;
 					.doughnut__info{
-						position: absolute;
+						@include fillPos;
 						z-index: 1;
-						top: 0;
-						left: 0;
-						width: 100%;
 						&__tag{
 							position: absolute;
 							z-index: 0;
@@ -185,19 +182,75 @@
 								font-size: 1rem;
 							}
 							&--value-one{
-
+								top: 25%;
+								left: 70%;
+								transform: translateY(100%);
 							}
 							&--value-two{
-
+								bottom: 20%;
+								right: 50%;
+								transform: translateX(100%);
 							}
 							&--value-three{
-
+								bottom: 40%;
+								left: 15%;
 							}
 							&--value-four{
-
+								top: 25%;
+								left: 20%;
 							}
 							&--value-five{
+								top: 10%;
+								left: 50%;
+								transform: translateX(-100%);
+							}
 
+						}
+					}
+				}
+				.bubble-chart{
+					width: 100%;
+					height: 100%;
+					&__child{
+						min-height: 100px;
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						&__text{
+							color: #00A4D4;
+							&#b1t1{
+								transform: translate(50px, 50px);
+							}
+							&#b1t2{
+								display: flex;
+								align-items: flex-end;
+								transform: translateY(-50px);
+							}
+							&#b1t3{
+								transform: translate(-70px, 20px);
+							}
+							&#b2t1{
+
+							}
+							&#b2t2{
+								display: flex;
+								align-items: center;
+							}
+							&#b2t3{
+
+							}
+							&#b3t1{
+								display: flex;
+								align-items: center;
+								transform: translateX(70px);
+
+							}
+							&#b3t2{
+								display: flex;
+								align-items: flex-end;
+							}
+							&#b3t3{
+								transform: translate(-50px, 50px);
 							}
 
 						}

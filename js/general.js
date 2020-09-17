@@ -31,6 +31,14 @@ $(function(){
 			$('.header__navbar__notification').css('height', $('.header__navbar__notification--noti').outerHeight()*$('.header__navbar__notification--noti').length+'px');
 		}
 	});
+	$.each($('.bubble-chart__child__text'), function(){
+		var f = $(this).data('fontsize');
+		if(f>=18){
+			$(this).css({'font-size': f+'px', 'font-weight': 'bold'});
+		}else{
+			$(this).css('font-size', f+'px');
+		}
+	});
 
 	$('#backTop').on('click', function(e) {
 		e.preventDefault();
