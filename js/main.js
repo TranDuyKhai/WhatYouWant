@@ -84,13 +84,12 @@ if($(window).width() > 1024){
 }else{
 	var distribution = document.getElementById('distribution-chart--mobo').getContext('2d');
 }
-var data_distribution = JSON.parse("[" + $('.distribution-chart').data('value') +','+ $('.distribution-chart').data('max') + "]"),
-data_label = $('.distribution-chart').data('label').split(',');
+var data_distribution = JSON.parse("[" + $('.distribution-chart').data('value') +','+ $('.distribution-chart').data('max') + "]");
 
 var distribution_chart = new Chart(distribution, {
 	type: 'line',
 	data: {
-		labels: data_label,
+		labels: "Unavailable",
 		datasets: [{
 			label: "Unavailable",
 			fill: true,

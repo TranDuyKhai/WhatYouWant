@@ -4,7 +4,7 @@
   align-items: flex-start;
   margin-top: 30px; }
   .data-statistic__menu {
-    max-width: calc((100% - 70px)/ 3);
+    max-width: calc((100% - 50px)/ 5);
     width: 100%; }
     .data-statistic__menu__child {
       display: flex;
@@ -33,7 +33,7 @@
         .data-statistic__menu__child.active p {
           font-weight: 600; }
   .data-statistic__chart {
-    max-width: calc((100% - 70px)/ 3 * 2);
+    max-width: calc((100% - 50px)/ 5 * 4);
     width: 100%; }
     .data-statistic__chart__child {
       margin-bottom: 70px; }
@@ -168,7 +168,6 @@
               left: 50%;
               transform: translateX(-100%); }
       .data-statistic__chart__child--graph .bubble-chart {
-        width: 100%;
         height: 100%; }
         .data-statistic__chart__child--graph .bubble-chart__child {
           min-height: 100px;
@@ -197,6 +196,12 @@
               align-items: flex-end; }
             .data-statistic__chart__child--graph .bubble-chart__child__text#b3t3 {
               transform: translate(-50px, 50px); }
+      .data-statistic__chart__child--graph .line-chart__label {
+        display: flex;
+        justify-content: space-between;
+        text-align: center; }
+        .data-statistic__chart__child--graph .line-chart__label--mobo {
+          display: none; }
   .data-statistic #distribution-chart--mobo {
     display: none; }
   @media screen and (max-width: 767px) {
@@ -231,6 +236,10 @@
               width: 100%; }
               .data-statistic__chart__child--graph--two-block .param__detail {
                 padding-right: 0; }
+          .data-statistic__chart__child--graph .line-chart__label--desktop {
+            display: none; }
+          .data-statistic__chart__child--graph .line-chart__label--mobo {
+            display: flex; }
       .data-statistic #distribution-chart--desktop {
         display: none; }
       .data-statistic #distribution-chart--mobo {
