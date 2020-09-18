@@ -1527,7 +1527,11 @@ input#search-bar:focus:-ms-placeholder {
 .library-list .top .group span {
     margin-left: 16px;
 }
-
+.filmInfo .btn-blue {
+    padding: 12px;
+    display: inline-block;
+    margin-top: 20px;
+}
 
 @media screen and (max-width: 1440px) {
     .login .box-login {
@@ -1535,6 +1539,18 @@ input#search-bar:focus:-ms-placeholder {
     }
 }
 @media screen and (max-width: 768px) {
+    .oscars__slide--big__child figure {
+        padding: 0 15px;
+    }
+    .events .blockSlide__slide__child {
+        border-radius: 14px;
+    }
+    .mv figure img {
+        width: auto;
+    }
+    .blockSlide figure img {
+        width: 100%;
+    }
     .w200 {
         line-height: 20px;
     }
@@ -1621,6 +1637,21 @@ input#search-bar:focus:-ms-placeholder {
 }
 
 @media screen and (max-width: 480px) {
+    .blockSlide__slide .slick-list {
+        width: 100%;
+    }
+    .blockSlide {
+        padding: 0 5px;
+    }
+    .blockSlide__slide .slick-list {
+        overflow: hidden;
+    }
+    .events .blockSlide__slide__child {
+        margin: 5px auto;
+    }
+    .mv figure img {
+        width: 100%;
+    }
     .pc {
         display: none!important;
     }
