@@ -40,7 +40,7 @@
 	</h1>
 	<div class="header__navbar">
 		<form action="index.html" method="post" class="search_form">
-			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,...">
+			<input type="text" name="keyword" id="keyword" placeholder="Tên phim, diễn viên, người dùng,..." autocomplete="off">
 			<button type="submit"><i class="fas fa-search"></i></button>
 		</form>
 		<button class="header__navbar__btnSearch"><i class="fas fa-search"></i></button>
@@ -98,6 +98,32 @@
 			<span class="dots dots--one"></span>
 			<span class="dots dots--two"></span>
 			<span class="dots dots--three"></span>
+		</div>
+	</div>
+	<div class="header__hint">
+		<div class="header__hint__child header__hint__btn">
+			<h2>Từ Khóa Hot</h2>
+			<div class="header__hint__btn--list">
+				<button class="btn btn-primary">Aquaman</button>
+				<button class="btn btn-primary">Mowgli</button>
+				<button class="btn btn-primary">Spider-man</button>
+				<button class="btn btn-primary">Venom</button>
+				<button class="btn btn-primary">Mortal Engines</button>
+				<button class="btn btn-primary">Avenger</button>
+				<button class="btn btn-primary">Về quê ăn tết</button>
+				<button class="btn btn-primary">Siêu sao siêu ngố</button>
+			</div>
+		</div>
+		<div class="header__hint__child header__hint__history">
+			<h2>Lịch sử tìm kiếm</h2>
+			<div class="header__hint__history__list">
+				<p><i class="far fa-clock"></i> Robin William</p>
+				<p><i class="far fa-clock"></i> Spider man 2</p>
+				<p><i class="far fa-clock"></i> Tháng năm rực rỡ</p>
+				<p><i class="far fa-clock"></i> Batman Dark Knight</p>
+				<p><i class="far fa-clock"></i> Bắc Kim Thang</p>
+			</div>
+			<button><i class="fas fa-trash-alt"></i> Xóa lịch sử tìm kiếm</button>
 		</div>
 	</div>
 </header>
@@ -334,7 +360,7 @@
 						<h3>Phân phối rating</h3>
 					</div>
 					<div class="data-statistic__chart__child--graph line-chart">
-						<canvas id="distribution-chart--desktop" width="860" height="450" class="distribution-chart distribution-chart--deskop" data-value="11, 4, 9, 0.5, 17, 7, 13, 10, 5, 2, 12, 6" data-max="18" data-label="Tháng 1 2019, Tháng 2 2019, Tháng 3 2019, Tháng 4 2019, Tháng 5 2019, Tháng 6 2019, Tháng 7 2019, Tháng 8 2019, Tháng 9 2019, Tháng 10 2019, Tháng 11 2019, Tháng 12 2019"></canvas>
+						<canvas id="distribution-chart--desktop" width="860" height="450" class="distribution-chart distribution-chart--deskop" data-value="11, 4, 9, 0.5, 17, 7, 13, 10, 5, 2, 12, 6" data-max="18"></canvas>
 						<div class="line-chart__label line-chart__label--desktop">
 							<p class="line-chart__label__child line-chart__label__child--value1">Tháng 1<br>2019</p>
 							<p class="line-chart__label__child line-chart__label__child--value2">Tháng 2<br>2019</p>

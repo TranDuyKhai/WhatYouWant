@@ -38,6 +38,13 @@ figure{
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #333;
+	&::before{
+		content: '';
+		@include fillPos;
+		z-index: -1;
+		background-color: #fff;
+		border-radius: 5px;
+	}
 	&__logo{
 		padding: 20px;
 		border-right: 1px solid #ccc;
@@ -49,18 +56,24 @@ figure{
 		padding: 20px;
 		max-width: calc(100% - 100px);
 		width: 100%;
+		padding: 16px 20px;
+        position: relative;
+        z-index: 0;
 		input{
 			width: 300px;
 			border-radius: 5px;
 			background: none;
 			padding: 10px 15px;
 			outline: none;
+			min-width: 300px;
+            width: 100%;
 		}
 		button{
 			border: none;
 			background: no-repeat;
 			transform: translateX(-40px);
 			outline: none;
+			transition: all .3s ease;
 			&.header__navbar__btnSearch{
 				display: none;
 			}
@@ -180,6 +193,80 @@ figure{
 				height: 5px;
 				border-radius: 50%;
 				background-color: #000;
+			}
+		}
+	}
+	&__hint{
+		position: absolute;
+		z-index: -2;
+		width: 100%;
+		top: 80px;
+		left: 0;
+		padding-top: 10px;
+		background-color: #fff;
+		transition: all 0.5s ease;
+		transform-origin: top center;
+		transform: scale(1, 0);
+        &.active{
+        	top: 73px;
+        	z-index: 1030;
+        	box-shadow: inset 0 10px 10px -10px rgba(#000, .2);
+        	transform: scale(1, 1);
+        }
+		&__child{
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			border-bottom: 1px solid #ccc;
+			h2{
+				max-width: 160px;
+				width: 100%;
+				text-align: center;
+				color: #262626;
+				font-weight: bold;
+				font-size: 1.4rem;
+			}
+			
+		}
+		&__btn{
+			padding-top: 45px;
+			&--list{
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				flex-flow: row wrap;
+				button{
+					padding: 10px 20px;
+					text-align: center;
+					width: auto;
+					height: auto;
+					margin-right: 15px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		&__history{
+			padding: 40px 0;
+			>button{
+				max-width: 210px;
+				width: 100%;
+				margin-right: 15px;
+				border: none;
+				background-color: #fff;
+
+			}
+			&__list{
+				width: 100%;
+				p{
+					color: #4D4D4D;
+					font-size: 1.3rem;
+					line-height: 3;
+					i{
+						vertical-align: middle;
+						font-size: 2rem;
+						margin-right: 15px;
+					}
+				}
 			}
 		}
 	}
@@ -318,6 +405,27 @@ figure{
 			font-size: 2.2rem;
 		}
 	}
+}
+.search_form {
+	width: 300px;
+	position: relative;
+	top: 50%;
+	transform-origin: left;
+    transition: width .3s ease;
+	button{
+		position: absolute;
+    	top: 50%;
+    	right: 10px;
+    	transform: translateY(-50%);
+	}
+    &.active {
+        position: absolute;
+        background-color: #fff;
+        top: 50%;
+        left: 20px;
+        width: calc(100% - 40px);
+        transform: translateY(-50%);
+    }
 }
 .tagName{
 	font-size: 2.2rem;

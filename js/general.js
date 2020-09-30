@@ -22,6 +22,9 @@ $(function(){
 			$('.header__navbar__menu').addClass('expand');
 		}
 	});
+	$('.search_form input:text').on('focus', function(){
+		$('.header').is('.active')?$('.header').removeClass():null;
+	});
 	$('.user__noti').on('click', function(){
 		if($('.header__navbar__notification').is('.expand')){
 			$('.header__navbar__notification').removeClass('expand');
@@ -37,6 +40,23 @@ $(function(){
 			$(this).css({'font-size': f+'px', 'font-weight': 'bold'});
 		}else{
 			$(this).css('font-size', f+'px');
+		}
+	});
+	var _headerHintIsOpen = 1;
+	$('.search_form input').focus(function(){
+		_headerHintIsOpen *= -1;
+		let _thisParent = $(this).parent();
+		_thisParent.hasClass('active')?null:_thisParent.addClass('active');
+		let _headerHint = $('.header__hint');
+		_headerHint.hasClass('active')?null:_headerHint.addClass('active');
+	});
+	$('main').click(function(event) {
+		if(_headerHintIsOpen == -1){
+			let _thisParent = $('.search_form input').parent();
+		 	_thisParent.hasClass('active')?_thisParent.removeClass('active'):null;
+		 	let _headerHint = $('.header__hint');
+		 	_headerHint.hasClass('active')?_headerHint.removeClass('active'):null;
+				_headerHintIsOpen *= -1;
 		}
 	});
 

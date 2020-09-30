@@ -34,6 +34,16 @@ figure {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #333; }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    border-radius: 5px; }
   .header__logo {
     padding: 20px;
     border-right: 1px solid #ccc; }
@@ -43,18 +53,24 @@ figure {
     align-items: center;
     padding: 20px;
     max-width: calc(100% - 100px);
-    width: 100%; }
+    width: 100%;
+    padding: 16px 20px;
+    position: relative;
+    z-index: 0; }
     .header__navbar input {
       width: 300px;
       border-radius: 5px;
       background: none;
       padding: 10px 15px;
-      outline: none; }
+      outline: none;
+      min-width: 300px;
+      width: 100%; }
     .header__navbar button {
       border: none;
       background: no-repeat;
       transform: translateX(-40px);
-      outline: none; }
+      outline: none;
+      transition: all .3s ease; }
       .header__navbar button.header__navbar__btnSearch {
         display: none; }
     .header__navbar__menu ul {
@@ -143,6 +159,66 @@ figure {
         height: 5px;
         border-radius: 50%;
         background-color: #000; }
+  .header__hint {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding-top: 10px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+    transform-origin: top center;
+    transform: scale(1, 0); }
+    .header__hint.active {
+      top: 73px;
+      z-index: 1030;
+      box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+      transform: scale(1, 1); }
+    .header__hint__child {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-bottom: 1px solid #ccc; }
+      .header__hint__child h2 {
+        max-width: 160px;
+        width: 100%;
+        text-align: center;
+        color: #262626;
+        font-weight: bold;
+        font-size: 1.4rem; }
+    .header__hint__btn {
+      padding-top: 45px; }
+      .header__hint__btn--list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap; }
+        .header__hint__btn--list button {
+          padding: 10px 20px;
+          text-align: center;
+          width: auto;
+          height: auto;
+          margin-right: 15px;
+          margin-bottom: 15px; }
+    .header__hint__history {
+      padding: 40px 0; }
+      .header__hint__history > button {
+        max-width: 210px;
+        width: 100%;
+        margin-right: 15px;
+        border: none;
+        background-color: #fff; }
+      .header__hint__history__list {
+        width: 100%; }
+        .header__hint__history__list p {
+          color: #4D4D4D;
+          font-size: 1.3rem;
+          line-height: 3; }
+          .header__hint__history__list p i {
+            vertical-align: middle;
+            font-size: 2rem;
+            margin-right: 15px; }
   @media screen and (max-width: 1023px) {
     .header {
       top: 0;
@@ -247,6 +323,25 @@ figure {
   @media screen and (max-width: 767px) {
     .filmInfo h2 {
       font-size: 2.2rem; } }
+
+.search_form {
+  width: 300px;
+  position: relative;
+  top: 50%;
+  transform-origin: left;
+  transition: width .3s ease; }
+  .search_form button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); }
+  .search_form.active {
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 20px;
+    width: calc(100% - 40px);
+    transform: translateY(-50%); }
 
 .tagName {
   font-size: 2.2rem;
