@@ -73,17 +73,52 @@ figure {
       transition: all .3s ease; }
       .header__navbar button.header__navbar__btnSearch {
         display: none; }
-    .header__navbar__menu ul {
+    .header__navbar__menu > ul {
       display: flex;
       padding: 0;
       list-style: none; }
-      .header__navbar__menu ul li:not(:last-of-type) {
+      .header__navbar__menu > ul > li:not(:last-of-type) {
         margin-right: 30px; }
-      .header__navbar__menu ul li a {
+      .header__navbar__menu > ul > li:last-of-type {
+        position: relative;
+        z-index: 0;
+        cursor: pointer; }
+        .header__navbar__menu > ul > li:last-of-type:hover div.sub-menu {
+          display: flex; }
+        .header__navbar__menu > ul > li:last-of-type:hover::after {
+          content: '';
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+          width: 175px;
+          height: 280px; }
+      .header__navbar__menu > ul > li a {
         color: #4D4D4D;
         font-weight: 600;
         font-size: 1.4rem;
         text-decoration: none; }
+      .header__navbar__menu > ul > li div.sub-menu {
+        position: absolute;
+        z-index: 0;
+        width: 175px;
+        height: 250px;
+        background-color: #fff;
+        top: 45px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #333;
+        display: none; }
+        .header__navbar__menu > ul > li div.sub-menu > ul {
+          list-style: none;
+          padding: 0; }
+          .header__navbar__menu > ul > li div.sub-menu > ul li {
+            line-height: 2;
+            font-size: 1.8rem;
+            font-weight: bold; }
     .header__navbar__user {
       display: flex; }
       .header__navbar__user--login {
