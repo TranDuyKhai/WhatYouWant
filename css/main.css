@@ -1627,6 +1627,11 @@ input#search-bar:focus:-ms-placeholder {
     bottom: 22.13%;
     z-index: -3;
 }
+.favorite-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 1440px) {
